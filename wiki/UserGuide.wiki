@@ -77,7 +77,18 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
    [http://extbuilder.googlecode.com/svn/wiki/twopanel.png]
 
 == FormPanel ==
+   # Create a new Ext page
+   # Add a FormPanel to root panel
+   # Set the FormPanel's layout to 'column'
+   # Add two Panels to FormPanel, set columnWidth to '.5'
+   # Set these two Panels's layout to 'form'
+   # Add 4 TextField to these Two Panel, each have two
 
+   Then you get a two column form panel
+   [http://extbuilder.googlecode.com/svn/wiki/formoutline.png]
+   [http://extbuilder.googlecode.com/svn/wiki/form.png]
+
+   
  
 == Toolbar ==
 
