@@ -9,6 +9,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 
 
 = Installation =
+ # make sure you eclipse version is 3.2,3.3 or 3.4 with GEF installed. 
  # download from  [http://code.google.com/p/extbuilder/downloads/list]
  # drop it into your eclipse\plugins directory.
  # Restart you eclipse
@@ -47,6 +48,13 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
   For a GridPanel component, you may set the store property and columns property.
   All you change make to a component take effect immediately. Both the code editor and UI editor will change. It’s a good way to watch your settings how change the UI to your wanted style.
 
+  === Drag Components ===
+  In UI editor, you can see a palette with some components in several folders.
+  Now extbuilder supports most components in latest Ext 2.2
+  You could click one component, such as a Panel then move the mouse to outline view, there must be a component named panel, it's the root component of one panel class. Click the mouse again, then the root panel component now have a child panel.
+  In the way, you can use any components and organize the component tree as you wish.
+  Although you may think drag a component and drop it to a canvas is better, but that means ExtBuilder need to implement all Ext components drawing,behavior and layout in Java code. From my opinion, this way is the fastest way to build a GUI page.
+
 = How to =
 == Set Layout == 
 
@@ -69,3 +77,5 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 == Tree==
 
 == Listeners ==
+
+== Extension ==
