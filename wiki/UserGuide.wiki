@@ -5,7 +5,7 @@
 
 = Introduction =
 
-ExtBuilder is eclipse plugin can help developer work out good style Ext javascript code without typing code.
+ExtBuilder is an eclipse plugin can help developer work out good style Ext javascript code without typing code.
 
 
 = Installation =
@@ -29,19 +29,24 @@ ExtBuilder is eclipse plugin can help developer work out good style Ext javascri
 
 
 = How to =
-== How to set Layout == 
+== Set Layout == 
 
 
-== How to build FormPanel ==
+== FormPanel ==
 
  
-== How to build Toolbar ==
+== Toolbar ==
 
-== How to set Buttons ==
+== Buttons ==
 
 
-== How to build GridPanel ==
+== Grid ==
 
-===Store settings===
+===Store===
 
 ===Columns===
+
+
+== Tree==
+
+== Listeners ==
