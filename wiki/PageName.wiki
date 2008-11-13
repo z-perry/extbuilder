@@ -2,7 +2,7 @@
 
 = Introduction =
 
-ExtBuilder is eclipse plugin can help developer work out good style ExtJs code without typing code.
+ExtBuilder is eclipse plugin can help developer work out good style Ext javascript code without typing code.
 
 
 = Installation =
@@ -11,8 +11,8 @@ ExtBuilder is eclipse plugin can help developer work out good style ExtJs code w
  # Restart you eclipse
 
 
-== Create a new ExtJs Page ==
-
+== Create a new Ext Page ==
+ Choose File->New, then select Web->ExtJs Page. a wizard dialog will appear. 
 
 == Overview == 
 
