@@ -85,6 +85,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
    # Add 4 TextField to these Two Panel, each have two
 
    Then you get a two column form panel
+
    [http://extbuilder.googlecode.com/svn/wiki/formoutline.png]
    [http://extbuilder.googlecode.com/svn/wiki/form.png]
 
