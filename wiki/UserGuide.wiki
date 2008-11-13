@@ -69,11 +69,11 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
    # Set the child panel's title to 'ChildPanel'
    # Click the parent panel on outline view
    # Set the parent panel's layout to 'Border'
-   [http://extbuilder.googlecode.com/svn/wiki/layout.png]
    # Click the child panel on outline view
    # Set the child panel's region to 'center'
-   [http://extbuilder.googlecode.com/svn/wiki/region.png]
    Because Ext border layout require a center region component, so when you set the layout to 'border', and not set the child panel's region to 'center', you may see some error message in browser, it's not a bug of ExtBuilder.
+   [http://extbuilder.googlecode.com/svn/wiki/layout.png]
+   [http://extbuilder.googlecode.com/svn/wiki/region.png]
    [http://extbuilder.googlecode.com/svn/wiki/twopanel.png]
 
 == FormPanel ==
