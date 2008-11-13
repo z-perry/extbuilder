@@ -24,9 +24,27 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
  # Input the file name, default is the class name
  # Select super class, default is Ext.Panel, you also can create a window by select Ext.Window
  # Click Finish.
+ # Then there are two files created in Package Explorer, for example: CorpSelectPanel.ext and CorpSelectPanel.js. The first file is used by extbuilder, the second file is the script file for you.
 
 == Overview == 
+  Before you start to editing a Ext page, make sure you opened Outline View and Properties View. If not, please click Window->Show View to open these two views.
+  [http://extbuilder.googlecode.com/svn/wiki/overview1.png]
+  [http://extbuilder.googlecode.com/svn/wiki/overview2.png]
 
+  === Editor View ===
+  It’s a multi-pages editor contains a source code editor and a UI editor. 
+  In source code editor, you can see the real code extbuilder generate for you. Please focus the initUIComponents function.
+  In UI editor, you can see the UI created by you code.
+
+  === Outline View ===
+  The outline view is a component tree view. You can select specific component in the view. 
+
+  === Properties View ===
+  The most important view you have to deal. In this view, you can set the configuration of one component.
+  For example: 
+  For a Panel component, you may set the title property to ‘MyPanel’, the layout property to ‘Border’, the width property to ‘100’, etc.
+  For a GridPanel component, you may set the store property and columns property.
+  All you change make to a component take effect immediately. Both the code editor and UI editor will change. It’s a good way to watch your settings how change the UI to your wanted style.
 
 = How to =
 == Set Layout == 
