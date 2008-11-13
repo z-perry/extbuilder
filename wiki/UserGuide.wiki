@@ -12,7 +12,7 @@ ExtBuilder is eclipse plugin can help developer work out good style Ext javascri
 
 
 == Create a new Ext Page ==
- # Click File->New, then select *Web->ExtJs* Page. a wizard dialog will appear.
+ # Click File->New, then select Web->ExtJs  Page. a wizard dialog will appear.
  # Click Next
  # Input the namespace you want
  # Input class name you want, extbuilder create one class in one file, just like Java
