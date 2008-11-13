@@ -2,13 +2,13 @@
 
 = Introduction =
 
-ExtBuilder is an ExtJs code builder without typing code.
+ExtBuilder is eclipse plugin can help developer work out good style ExtJs code without typing code.
 
 
 = Installation =
-#download from  [http://code.google.com/p/extbuilder/downloads/list]
-#drop it into your eclipse\plugins directory.
-#Restart you eclipse
+ # download from  [http://code.google.com/p/extbuilder/downloads/list]
+ # drop it into your eclipse\plugins directory.
+ # Restart you eclipse
 
 
 == Create a new ExtJs Page ==
