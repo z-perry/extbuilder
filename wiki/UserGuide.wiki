@@ -56,8 +56,25 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
   Although you may think drag a component and drop it to a canvas is better, but that means ExtBuilder need to implement all Ext components drawing,behavior and layout in Java code. From my opinion, this way is the fastest way to build a GUI page.
 
 = How to =
-== Set Layout == 
 
+== Set Properties ==
+  Ext component have many properties. ExtBuilder divide these properties into two categories: common properties and advanced properties. By default, only common properties are shown,you can show advanced properties by click the Advanced button at the top toolbar  of Properties View.
+  Properties can be string, integer,drop down list. Some special properties like store, toolbar,buttons,columns Model will pop up a dialog for user set.
+
+== Set Layout == 
+   There are two panels, one parent, one child.
+   # Create a new Ext page
+   # Set the root panel's tilte to 'ParentPanel'
+   # Add a Panel to page root panel component
+   # Set the child panel's title to 'ChildPanel'
+   # Click the parent panel on outline view
+   # Set the parent panel's layout to 'Border'
+   [http://extbuilder.googlecode.com/svn/wiki/layout.png]
+   # Click the child panel on outline view
+   # Set the child panel's region to 'center'
+   [http://extbuilder.googlecode.com/svn/wiki/region.png]
+   Because Ext border layout require a center region component, so when you set the layout to 'border', and not set the child panel's region to 'center', you may see some error message in browser, it's not a bug of ExtBuilder.
+   [http://extbuilder.googlecode.com/svn/wiki/twopanel.png]
 
 == FormPanel ==
 
