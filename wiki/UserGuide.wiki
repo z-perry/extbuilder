@@ -1,0 +1,36 @@
+#summary ExtBuilder User Guide
+
+= Introduction =
+
+ExtBuilder is eclipse plugin can help developer work out good style Ext javascript code without typing code.
+
+
+= Installation =
+ # download from  [http://code.google.com/p/extbuilder/downloads/list]
+ # drop it into your eclipse\plugins directory.
+ # Restart you eclipse
+
+
+== Create a new Ext Page ==
+ Choose File->New, then select Web->ExtJs Page. a wizard dialog will appear. 
+ 
+
+== Overview == 
+
+
+== Layout Settings == 
+
+
+== How to build FromPanel ==
+
+ 
+== How to build Toolbar ==
+
+== How to set Buttons ==
+
+
+== How to build GridPanel ==
+
+===Store settings===
+
+===Columns===
