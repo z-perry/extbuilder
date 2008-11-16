@@ -135,9 +135,38 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
    You can use buttonAlign to align button at left,right or center.
 
 == Grid ==
+  ExtBuilder support three grid panels. GridPanel,PagingGridPanel and EditorGridPanel.
+  PagingGridPanel is a gridpanel with paging toolbar on bottom.
 
 ===Store===
+  [http://extbuilder.googlecode.com/svn/wiki/store1.png]
+  [http://extbuilder.googlecode.com/svn/wiki/store1.png]
 
+  Store can take data from remote(HttpProxy) or local(MemoryProxy). Here is a example we use MemoryProxy to build grid.
+  # Click '...' button to show Store Settings Dialog
+  # Select MemoryProxy in Basic Page
+  # Click Sample button to generate some random data 
+  # Click OK button to save store settings.
+  # Add loadData function in class 
+  {{{
+    loadData : function() {
+		this.store1.load();
+    }
+  }}}
+  here store1 is the component name of store.
+  # Add code in class constructor function
+  {{{
+     system.CorpSelectPanel = function(config) {
+	Ext.applyIf(this, config);
+	this.initUIComponents();
+	system.CorpSelectPanel.superclass.constructor.call(this);
+        //load store data here
+	this.loadData();
+     };
+   }}} 
+   
+   Now, you can see the data at preview page.
+   [http://extbuilder.googlecode.com/svn/wiki/grid.png]
 ===Columns===
 
 
