@@ -20,7 +20,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
  == Apatana ==
  # Install Apatanta as a plugin to Eclipse.
  # Install ExtBuilder to Eclipse
- Note: Apatana Studio removed some build-in plugins from Eclipse, such as GEF,icu,JDT,etc. If you definitely want to use Apatana Studio without eclipse, please install thiese plguins first.
+ Note: Apatana Studio removed some build-in plugins from Eclipse, such as GEF,icu,JDT,etc. If you definitely want to use Apatana Studio without eclipse, please install these plguins first.
   
 
 
