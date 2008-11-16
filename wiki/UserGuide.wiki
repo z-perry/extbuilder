@@ -1,4 +1,5 @@
 #summary ExtBuilder User Guide
+#labels Featured,Phase-Deploy
 
 <wiki:toc max_depth="2" />
   
@@ -9,10 +10,19 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 
 
 = Installation =
+ == Eclipse 3.x==
  # make sure you eclipse version is 3.2,3.3 or 3.4 with GEF installed. 
- # download from  [http://code.google.com/p/extbuilder/downloads/list]
- # drop it into your eclipse\plugins directory.
+ # download archived update site from  [http://code.google.com/p/extbuilder/downloads/list]
+ # Click Help->Software Updates->Find and Install...->Search for new features to install,Click Next
+ # Click New Archived Site-> Browse to extbuilder_update.zip and click Open.
+ # Click OK and follow the instructions to install.
  # Restart you eclipse
+ == Apatana ==
+ # Install Apatanta as a plugin to Eclipse.
+ # Install ExtBuilder to Eclipse
+ Note: Apatana Studio removed some build-in plugins from Eclipse, such as GEF,icu,JDT,etc. If you definitely want to use Apatana Studio without eclipse, please install thiese plguins first.
+  
+
 
 = Starting =
 == Kick start ==
