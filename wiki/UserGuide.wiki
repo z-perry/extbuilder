@@ -140,7 +140,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 
 ===Store===
   [http://extbuilder.googlecode.com/svn/wiki/store1.png]
-  [http://extbuilder.googlecode.com/svn/wiki/store1.png]
+  [http://extbuilder.googlecode.com/svn/wiki/store2.png]
 
   Store can take data from remote(HttpProxy) or local(MemoryProxy). Here is a example we use MemoryProxy to build grid.
   # Click '...' button to show Store Settings Dialog
@@ -166,7 +166,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
    }}} 
    
    Now, you can see the data at preview page.
-   [http://extbuilder.googlecode.com/svn/wiki/grid.png]
+   [http://extbuilder.googlecode.com/svn/wiki/grid1.png]
 ===Columns===
 
 
