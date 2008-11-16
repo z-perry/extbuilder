@@ -120,8 +120,19 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 			}])
    }}}
 
-== Buttons ==
+   Look at this code block, I use a little trick.  Because ExtBuilder need to show preview page for users, some javascript errors will make the preview page as blank page. So I have to make it runs fine when renderer ext components.
+   You may need to write your own event handler function in your class.
+   For example:
+   {{{ 
+      ...,
+      onButtonClick : function(button, event){
+         // your code here
+      }
+   }}}
 
+== Buttons ==
+   Each Panel has one buttons property. Just same as Toolbar buttons editing except the component can add here is only Ext.Button.
+   You can use buttonAlign to align button at left,right or center.
 
 == Grid ==
 
