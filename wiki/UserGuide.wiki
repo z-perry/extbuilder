@@ -102,6 +102,23 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
    
  
 == Toolbar ==
+   Each Ext Panel has two toolbars, tbar and bbar. 
+   # Click one Panel of Outline view.
+   # Click Properties view, scroll to tbar or bbar property
+   # Click the right side button '...' to show Toolbar Settings Dialog
+   # In Toolbar Settings Dialog, click Add Button(+) to add Button,Separator,Spacer,Fill,TextItem and MenuButton. Menu editing is not ready in current  version.
+   # Change the text toolbar text, by default, the handler is as "onButtonTextClick". Of course, you can change the handler function name.
+   # Then switch to Source code Editor, see what happened.
+   [http://extbuilder.googlecode.com/svn/wiki/toolbar.png]
+   
+   {{{ 
+         tbar : new Ext.Toolbar([{
+				handler : function(button, event) {
+					this.onButtonClick(button, event);
+				}.createDelegate(this),
+				text : "button"
+			}])
+   }}}
 
 == Buttons ==
 
