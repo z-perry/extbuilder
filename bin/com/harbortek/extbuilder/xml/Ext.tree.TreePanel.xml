@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.tree.TreePanel" extends="Ext.Panel" category="Container" label="TreePanel" xtype="treepanel">
+	<Properties>
+		<Property name="animate" type="Boolean" advanced="true" default="false"/>
+		<Property name="containerScroll" type="Boolean" default="true"/>
+		<Property name="ddAppendOnly" type="String" advanced="true"/>
+		<Property name="ddGroup" type="String" advanced="true"/>
+		<Property name="ddScroll" type="Boolean" advanced="true"/>
+		<Property name="dragConfig" type="Object" advanced="true"/>
+		<Property name="dropConfig" type="Object" advanced="true"/>
+		<Property name="enableDD" type="Boolean" advanced="true"/>
+		<Property name="enableDrag" type="Boolean" advanced="true"/>
+		<Property name="enableDrop" type="Boolean" advanced="true"/>
+		<Property name="hideBorders" type="Boolean" advanced="true"/>
+		<Property name="hlColor" type="String" advanced="true"/>
+		<Property name="hlDrop" type="Boolean" advanced="true"/>
+		<Property name="lines" type="Boolean" advanced="true"/>
+		<Property name="loader" type="Ext.tree.TreeLoader" />
+		<Property name="pathSeparator" type="String" advanced="true"/>
+		<Property name="root" type="Ext.tree.TreeNode" />
+		<Property name="rootVisible" type="Boolean" />
+		<Property name="selModel" type="Boolean" />
+		<Property name="singleExpand" type="Boolean" />
+		<Property name="trackMouseOver" type="Boolean" />
+		<Property name="useArrows" type="Boolean" advanced="true"/>
+	</Properties>
+	<Events>
+		<Event name="append" comment="Fires when a new child node is appended to a node in this tree." >
+			<Param name="tree" type="Tree" comment="The owner tree" />
+			<Param name="parent" type="Node" comment="The parent node" />
+			<Param name="node" type="Node" comment="The newly appended node" />
+			<Param name="index" type="Number" comment="The index of the newly appended node" />
+		</Event>
+		<Event name="beforeappend" comment="Fires before a new child is appended to a node in this tree, return false to cancel the append." >
+			<Param name="tree" type="Tree" comment="The owner tree" />
+			<Param name="parent" type="Node" comment="The parent node" />
+			<Param name="node" type="Node" comment="The child node to be appended" />
+		</Event>
+		<Event name="beforechildrenrendered" comment="Fires right before the child nodes for a node are rendered" >
+			<Param name="node" type="Node" comment="The node" />
+		</Event>
+		<Event name="beforeclick" comment="Fires before click processing on a node. Return false to cancel the default action." >
+			<Param name="node" type="Node" comment="The node" />
+			<Param name="e" type="Ext.EventObject" comment="The event object" />
+		</Event>
+		<Event name="beforecollapsenode" comment="Fires before a node is collapsed, return false to cancel." >
+			<Param name="node" type="Node" comment="The node" />
+			<Param name="deep" type="Boolean" />
+			<Param name="anim" type="Boolean" />
+		</Event>
+		<Event name="beforeexpandnode" comment="Fires before a node is expanded, return false to cancel." >
+			<Param name="node" type="Node" comment="The node" />
+			<Param name="deep" type="Boolean" />
+			<Param name="anim" type="Boolean" />
+		</Event>
+		<Event name="beforeinsert" comment="Fires before a new child is inserted in a node in this tree, return false to cancel the insert." >
+			<Param name="tree" type="Tree" comment="The owner tree" />
+			<Param name="parent" type="Node" comment="The parent node" />
+			<Param name="node" type="Node" comment="The child node to be inserted" />
+			<Param name="refNode" type="Node" comment="The child node the node is being inserted before" />
+		</Event>
+		<Event name="beforeload" comment="Fires before a node is loaded, return false to cancel" >
+			<Param name="node" type="Node" comment="The node being loaded" />
+		</Event>
+		<Event name="beforemovenode" comment="Fires before a node is moved to a new location in the tree. Return false to cancel the move." >
+			<Param name="tree" type="Tree" comment="The owner tree" />
+			<Param name="node" type="Node" comment="The node being moved" />
+			<Param name="oldParent" type="Node" comment="The parent of the node" />
+			<Param name="newParent" type="Node" comment="The new parent the node is moving to" />
+			<Param name="index" type="Number" comment="The index it is being moved to" />
+		</Event>
+		<Event name="beforenodedrop" comment="Fires when a DD object is dropped on a node in this tree for preprocessing. Return false to cancel the drop." >
+			<Param name="dropEvent" type="Object" />
+		</Event>
+		<Event name="beforeremove" comment="Fires before a child is removed from a node in this tree, return false to cancel the remove." >
+			<Param name="tree" type="Tree" comment="The owner tree" />
+			<Param name="parent" type="Node" comment="The parent node" />
+			<Param name="node" type="Node" comment="The child node to be removed" />
+		</Event>
+		<Event name="checkchange" comment="Fires when a node with a checkbox's checked property changes" >
+			<Param name="this" type="Node" comment="This node" />
+			<Param name="checked" type="Boolean" />
+		</Event>
+		<Event name="click" comment="Fires when a node is clicked" >
+			<Param name="node" type="Node" comment="The node" />
+			<Param name="e" type="Ext.EventObject" comment="The event object" />
+		</Event>
+		<Event name="collapsenode" comment="Fires when a node is collapsed" >
+			<Param name="node" type="Node" comment="The node" />
+		</Event>
+		<Event name="contextmenu" comment="Fires when a node is right clicked. To display a context menu in response to this event, first create a Menu object (see {" >
+			<Param name="node" type="Node" comment="The node" />
+			<Param name="e" type="Ext.EventObject" comment="The event object" />
+		</Event>
+		<Event name="dblclick" comment="Fires when a node is double clicked" >
+			<Param name="node" type="Node" comment="The node" />
+			<Param name="e" type="Ext.EventObject" comment="The event object" />
+		</Event>
+		<Event name="disabledchange" comment="Fires when the disabled status of a node changes" >
+			<Param name="node" type="Node" comment="The node" />
+			<Param name="disabled" type="Boolean" />
+		</Event>
+		<Event name="dragdrop" comment="Fires when a dragged node is dropped on a valid DD target" >
+			<Param name="this" type="Ext.tree.TreePanel" />
+			<Param name="node" type="Ext.tree.TreeNode" />
+			<Param name="dd" type="DD" comment="The dd it was dropped on" />
+			<Param name="e" type="event" comment="The raw browser event" />
+		</Event>
+		<Event name="enddrag" comment="Fires when a drag operation is complete" >
+			<Param name="this" type="Ext.tree.TreePanel" />
+			<Param name="node" type="Ext.tree.TreeNode" />
+			<Param name="e" type="event" comment="The raw browser event" />
+		</Event>
+		<Event name="expandnode" comment="Fires when a node is expanded" >
+			<Param name="node" type="Node" comment="The node" />
+		</Event>
+		<Event name="insert" comment="Fires when a new child node is inserted in a node in this tree." >
+			<Param name="tree" type="Tree" comment="The owner tree" />
+			<Param name="parent" type="Node" comment="The parent node" />
+			<Param name="node" type="Node" comment="The child node inserted" />
+			<Param name="refNode" type="Node" comment="The child node the node was inserted before" />
+		</Event>
+		<Event name="load" comment="Fires when a node is loaded" >
+			<Param name="node" type="Node" comment="The node that was loaded" />
+		</Event>
+		<Event name="movenode" comment="Fires when a node is moved to a new location in the tree" >
+			<Param name="tree" type="Tree" comment="The owner tree" />
+			<Param name="node" type="Node" comment="The node moved" />
+			<Param name="oldParent" type="Node" comment="The old parent of this node" />
+			<Param name="newParent" type="Node" comment="The new parent of this node" />
+			<Param name="index" type="Number" comment="The index it was moved to" />
+		</Event>
+		<Event name="nodedragover" comment="Fires when a tree node is being targeted for a drag drop, return false to signal drop not allowed. " >
+			<Param name="dragOverEvent" type="Object" />
+		</Event>
+		<Event name="nodedrop" comment="Fires after a DD object is dropped on a node in this tree." >
+			<Param name="dropEvent" type="Object" />
+		</Event>
+		<Event name="remove" comment="Fires when a child node is removed from a node in this tree." >
+			<Param name="tree" type="Tree" comment="The owner tree" />
+			<Param name="parent" type="Node" comment="The parent node" />
+			<Param name="node" type="Node" comment="The child node removed" />
+		</Event>
+		<Event name="startdrag" comment="Fires when a node starts being dragged" >
+			<Param name="this" type="Ext.tree.TreePanel" />
+			<Param name="node" type="Ext.tree.TreeNode" />
+			<Param name="e" type="event" comment="The raw browser event" />
+		</Event>
+		<Event name="textchange" comment="Fires when the text for a node is changed" >
+			<Param name="node" type="Node" comment="The node" />
+			<Param name="text" type="String" comment="The new text" />
+			<Param name="oldText" type="String" comment="The old text" />
+		</Event>
+	</Events>
+</Component>

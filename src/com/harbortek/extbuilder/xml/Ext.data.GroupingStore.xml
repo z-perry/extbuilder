@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.GroupingStore" extends="Ext.data.Store">
+<Properties>
+<Property name="groupField" type="String" comment="The field name by which to sort the store's data (defaults to '')." />
+<Property name="groupOnSort" type="Boolean" comment="True to sort the data on the grouping field when a grouping operation occurs, false to sort based on the existing sort info (defaults to false)." />
+<Property name="remoteGroup" type="Boolean" comment="True if the grouping should apply on the server side, false if it is local only (defaults to false).  If the grouping is local, it can be applied immediately to the data.  If it is remote, then it will simply act as a helper, automatically sending the grouping field name as the 'groupBy' param with each XHR call." />
+</Properties>
+<Events>
+</Events>
+</Component>

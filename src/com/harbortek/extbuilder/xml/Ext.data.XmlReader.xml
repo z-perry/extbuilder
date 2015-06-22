@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.XmlReader" extends="Ext.data.DataReader">
+<Properties>
+<Property name="totalRecords" type="String" comment="The DomQuery path from which to retrieve the total number of records in the dataset. This is only needed if the whole dataset is not passed in one go, but is being paged from the remote server. @cfg {String} record The DomQuery path to the repeated element which contains record information. @cfg {String} success The DomQuery path to the success attribute used by forms. @cfg {String} id The DomQuery path relative from the record element to the element that contains a record identifier value. @constructor Create a new XmlReader. @param {Object} meta Metadata configuration options @param {Object} recordType Either an Array of field definition objects as passed to {@link Ext.data.Record#create}, or a Record constructor object created using {@link Ext.data.Record#create}." />
+</Properties>
+<Events>
+</Events>
+</Component>

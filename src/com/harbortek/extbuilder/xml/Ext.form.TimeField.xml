@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.TimeField" extends="Ext.form.ComboBox"  category="Form" label="TimeField" xtype="timefield">
+	<Properties>
+		<Property name="altFormats" type="String" comment="Multiple date formats separated by '|' to try when parsing a user input value and it doesn't match the defined format (defaults to 'g:ia|g:iA|g:i a|g:i A|h:i|g:i|H:i|ga|ha|gA|h a|g a|g A|gi|hi|gia|hia|g|H')." />
+		<Property name="format" type="String" comment="The default time format string which can be overriden for localization support.  The format must be valid according to {@link Date#parseDate} (defaults to 'g:i A', e.g., '3:15 PM').  For 24-hour time format try 'H:i' instead." />
+		<Property name="increment" type="Number" comment="The number of minutes between each time value in the list (defaults to 15)." />
+		<Property name="invalidText" type="String" comment="The error text to display when the time in the field is invalid (defaults to '{value} is not a valid time')." />
+		<Property name="maxText" type="String" comment="The error text to display when the time is after maxValue (defaults to 'The time in this field must be equal to or before {0}')." />
+		<Property name="maxValue" type="Date/String" comment="The maximum allowed time. Can be either a Javascript date object with a valid time value or a string time in a valid format -- see {@link #format} and {@link #altFormats} (defaults to null)." />
+		<Property name="minText" type="String" comment="The error text to display when the date in the cell is before minValue (defaults to 'The time in this field must be equal to or after {0}')." />
+		<Property name="minValue" type="Date/String" comment="The minimum allowed time. Can be either a Javascript date object with a valid time value or a string time in a valid format -- see {@link #format} and {@link #altFormats} (defaults to null)." />
+		<Property name="grow" hide="true" />
+		<Property name="growMin" hide="true" />
+		<Property name="growMax" hide="true" />
+	</Properties>
+	<Events>
+	</Events>
+</Component>

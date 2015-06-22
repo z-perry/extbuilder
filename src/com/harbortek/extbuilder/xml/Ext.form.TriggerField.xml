@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.TriggerField" extends="Ext.form.TextField" >
+	<Properties>
+		<Property name="autoCreate" type="String/Object" comment="A DomHelper element spec, or true for a default element spec (defaults to {tag: 'input', type: 'text', size: '16', autocomplete: 'off'})" />
+		<Property name="hideTrigger" type="Boolean" comment="True to hide the trigger element and display only the base text field (defaults to false)" />
+		<Property name="triggerClass" type="String" comment="A CSS class to apply to the trigger" />
+		<Property name="grow" hide="true" />
+		<Property name="growMin" hide="true" />
+		<Property name="growMax" hide="true" />
+	</Properties>
+	<Events>
+	</Events>
+</Component>

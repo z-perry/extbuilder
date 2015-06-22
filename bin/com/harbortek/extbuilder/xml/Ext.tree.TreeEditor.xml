@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.tree.TreeEditor" extends="Ext.Editor">
+<Properties>
+<Property name="alignment" type="String" />
+<Property name="cls" type="String" />
+<Property name="editDelay" type="Number" />
+<Property name="hideEl" type="Boolean" />
+<Property name="maxWidth" type="Number" />
+<Property name="shim" type="Boolean" />
+</Properties>
+<Events>
+</Events>
+</Component>

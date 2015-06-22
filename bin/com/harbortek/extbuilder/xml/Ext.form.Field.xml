@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.Field" extends="Ext.BoxComponent">
+	<Properties>
+		<Property name="autoCreate" type="String/Object" advanced="true" comment="A DomHelper element spec, or true for a default element spec (defaults to {tag: 'input', type: 'text', size: '20', autocomplete: 'off'})" />
+		<Property name="clearCls" type="String" advanced="true" comment="The CSS class used to provide field clearing (defaults to 'x-form-clear-left')" />
+		<Property name="cls" type="String" advanced="true" comment="A custom CSS class to apply to the field's underlying element (defaults to '')." />
+		<Property name="disabled" type="Boolean" comment="True to disable the field (defaults to false)." />
+		<Property name="fieldClass" type="String" advanced="true" comment="The default CSS class for the field (defaults to 'x-form-field')" />
+		<Property name="fieldLabel" type="String" comment="The label text to display next to this field (defaults to '')" />
+		<Property name="focusClass" type="String" advanced="true" comment="The CSS class to use when the field receives focus (defaults to 'x-form-focus')" />
+		<Property name="hideLabel" type="Boolean" comment="True to completely hide the label element (defaults to false)" />
+		<Property name="inputType" type="String" advanced="true" comment="The type attribute for input fields -- e.g. radio, text, password, file (defaults to 'text')." />
+		<Property name="invalidClass" type="String" advanced="true" comment="The CSS class to use when marking a field invalid (defaults to 'x-form-invalid')" />
+		<Property name="invalidText" type="String" comment="The error text to use when marking a field invalid and no message is provided (defaults to 'The value in this field is invalid')" />
+		<Property name="itemCls" type="String" advanced="true" comment="An additional CSS class to apply to the wrapper's form item element of this field (defaults to the container's itemCls value if set, or '')." />
+		<Property name="labelSeparator" type="String" advanced="true" comment="The standard separator to display after the text of each form label (defaults to the value of {@link Ext.layout.FormLayout#labelSeparator}, which is a colon ':' by default).  To display no separator for this field's label specify empty string ''." />
+		<Property name="labelStyle" type="String" advanced="true" comment="A CSS style specification to apply directly to this field's label (defaults to the container's labelStyle value if set, or '')." />
+		<Property name="msgTarget" type="String" comment="The location where error text should display.  (defaults to 'qtip')" />
+		<Property name="name" type="String" comment="The field's HTML name attribute (defaults to '')." />
+		<Property name="readOnly" type="Boolean" comment="True to mark the field as readOnly in HTML (defaults to false) -- Note: this only sets the element's readOnly DOM attribute." />
+		<Property name="tabIndex" type="Number" comment="The tabIndex for this field. Note this only applies to fields that are rendered, not those which are built via applyTo (defaults to undefined)." />
+		<Property name="validateOnBlur" type="Boolean" advanced="true" comment="Whether the field should validate when it loses focus (defaults to true)." />
+		<Property name="validationDelay" type="Number" advanced="true" comment="The length of time in milliseconds after user input begins until validation is initiated (defaults to 250)" />
+		<Property name="validationEvent" type="String/Boolean" advanced="true" comment="The event that should initiate field validation. Set to false to disable automatic validation (defaults to 'keyup')." />
+		<Property name="value" type="String" comment="A value to initialize this field with (defaults to undefined)." />
+		<Property name="autoWidth" hide="true" />
+		<Property name="autoHeight" hide="true" />
+		<Property name="autoEl" hide="true" />
+	</Properties>
+	<Events>
+		<Event name="blur" comment="Fires when this field loses input focus." >
+			<Param name="this" type="Ext.form.Field" />
+		</Event>
+		<Event name="change" comment="Fires just before the field blurs if the field value has changed." >
+			<Param name="this" type="Ext.form.Field" />
+			<Param name="newValue" type="Mixed" comment="The new value" />
+			<Param name="oldValue" type="Mixed" comment="The original value" />
+		</Event>
+		<Event name="focus" comment="Fires when this field receives input focus." >
+			<Param name="this" type="Ext.form.Field" />
+		</Event>
+		<Event name="invalid" comment="Fires after the field has been marked as invalid." >
+			<Param name="this" type="Ext.form.Field" />
+			<Param name="msg" type="String" comment="The validation message" />
+		</Event>
+		<Event name="specialkey" comment="Fires when any key related to navigation (arrows, tab, enter, esc, etc.) is pressed.  You can check {" >
+			<Param name="this" type="Ext.form.Field" />
+			<Param name="e" type="Ext.EventObject" comment="The event object" />
+		</Event>
+		<Event name="valid" comment="Fires after the field has been validated with no errors." >
+			<Param name="this" type="Ext.form.Field" />
+		</Event>
+	</Events>
+</Component>

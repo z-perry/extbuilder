@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.menu.BaseItem" extends="Ext.Component">
+<Properties>
+<Property name="activeClass" type="String" />
+<Property name="canActivate" type="Boolean" />
+<Property name="handler" type="Function" />
+<Property name="hideDelay" type="Number" />
+<Property name="hideOnClick" type="Boolean" />
+<Property name="scope" type="Object" />
+</Properties>
+<Events>
+<Event name="activate">
+<Param name="this" type="Ext.menu.BaseItem"/>
+</Event>
+<Event name="click">
+<Param name="this" type="Ext.menu.BaseItem"/>
+<Param name="e" type="Ext.EventObject"/>
+</Event>
+<Event name="deactivate">
+<Param name="this" type="Ext.menu.BaseItem"/>
+</Event>
+</Events>
+</Component>

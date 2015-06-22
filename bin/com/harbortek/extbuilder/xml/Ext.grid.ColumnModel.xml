@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.grid.ColumnModel" extends="Ext.util.Observable">
+<Properties>
+<Property name="align" type="String" />
+<Property name="css" type="String" />
+<Property name="dataIndex" type="String" />
+<Property name="editor" type="Ext.form.Field" />
+<Property name="fixed" type="Boolean" />
+<Property name="header" type="String" />
+<Property name="hidden" type="Boolean" />
+<Property name="hideable" type="Boolean" />
+<Property name="id" type="String" />
+<Property name="menuDisabled" type="Boolean" />
+<Property name="renderer" type="Function" />
+<Property name="resizable" type="Boolean" />
+<Property name="sortable" type="Boolean" />
+<Property name="tooltip" type="String" />
+<Property name="width" type="Number" />
+</Properties>
+<Events>
+<Event name="columnmoved">
+<Param name="this" type="ColumnModel"/>
+<Param name="oldIndex" type="Number"/>
+<Param name="newIndex" type="Number"/>
+</Event>
+<Event name="configchange">
+<Param name="this" type="ColumnModel"/>
+</Event>
+<Event name="headerchange">
+<Param name="this" type="ColumnModel"/>
+<Param name="columnIndex" type="Number"/>
+<Param name="newText" type="String"/>
+</Event>
+<Event name="hiddenchange">
+<Param name="this" type="ColumnModel"/>
+<Param name="columnIndex" type="Number"/>
+<Param name="hidden" type="Boolean"/>
+</Event>
+<Event name="widthchange">
+<Param name="this" type="ColumnModel"/>
+<Param name="columnIndex" type="Number"/>
+<Param name="newWidth" type="Number"/>
+</Event>
+</Events>
+</Component>

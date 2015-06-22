@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.MemoryProxy" extends="Ext.data.DataProxy">
+<Properties>
+</Properties>
+<Events>
+<Event name="loadexception" comment="Fires if an exception occurs in the Proxy during data loading. Note that this event is also relayed through {" >
+<Param name="this" type="Object" />
+<Param name="arg" type="Object" comment="The callback's arg object passed to the {@link #load} function" />
+<Param name="null" type="Object" comment="This parameter does not apply and will always be null for MemoryProxy" />
+<Param name="e" type="Error" comment="The JavaScript Error object caught if the configured Reader could not read the data" />
+</Event>
+</Events>
+</Component>

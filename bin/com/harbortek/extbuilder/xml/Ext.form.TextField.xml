@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.TextField" extends="Ext.form.Field"  category="Form" label="TextField" xtype="textfield">
+	<Properties>
+		<Property name="allowBlank" type="Boolean" comment="False to validate that the value length > 0 (defaults to true)" />
+		<Property name="blankText" type="String" comment="Error text to display if the allow blank validation fails (defaults to 'This field is required')" />
+		<Property name="disableKeyFilter" type="Boolean" comment="True to disable input keystroke filtering (defaults to false)" />
+		<Property name="emptyClass" type="String" comment="The CSS class to apply to an empty field to style the {@link #emptyText} (defaults to 'x-form-empty-field').  This class is automatically added and removed as needed depending on the current field value." />
+		<Property name="emptyText" type="String" comment="The default text to display in an empty field (defaults to null)." />
+		<Property name="enableKeyEvents" type="Boolean" comment="True to enable the proxying of key events for the HTML input field (defaults to false)" />
+		<Property name="grow" type="Boolean" comment="True if this field should automatically grow and shrink to its content" />
+		<Property name="growMax" type="Number" comment="The maximum width to allow when grow = true (defaults to 800)" />
+		<Property name="growMin" type="Number" comment="The minimum width to allow when grow = true (defaults to 30)" />
+		<Property name="maskRe" type="RegExp" comment="An input mask regular expression that will be used to filter keystrokes that don't match (defaults to null)" />
+		<Property name="maxLength" type="Number" comment="Maximum input field length allowed (defaults to Number.MAX_VALUE)" />
+		<Property name="maxLengthText" type="String" comment="Error text to display if the maximum length validation fails (defaults to 'The maximum length for this field is {maxLength}')" />
+		<Property name="minLength" type="Number" comment="Minimum input field length required (defaults to 0)" />
+		<Property name="minLengthText" type="String" comment="Error text to display if the minimum length validation fails (defaults to 'The minimum length for this field is {minLength}')" />
+		<Property name="regex" type="RegExp" comment="A JavaScript RegExp object to be tested against the field value during validation (defaults to null). If available, this regex will be evaluated only after the basic validators all return true, and will be passed the current field value.  If the test fails, the field will be marked invalid using {@link #regexText}." />
+		<Property name="regexText" type="String" comment="The error text to display if {@link #regex} is used and the test fails during validation (defaults to '')" />
+		<Property name="selectOnFocus" type="Boolean" comment="True to automatically select any existing field text when the field receives input focus (defaults to false)" />
+		<Property name="validator" type="Function" comment="A custom validation function to be called during field validation (defaults to null). If available, this function will be called only after the basic validators all return true, and will be passed the current field value and expected to return boolean true if the value is valid or a string error message if invalid." />
+		<Property name="vtype" type="String" comment="A validation type name as defined in {@link Ext.form.VTypes} (defaults to null)" />
+		<Property name="vtypeText" type="String" comment="A custom error message to display in place of the default message provided for the {@link #vtype} currently set for this field (defaults to '').  Only applies if vtype is set, else ignored." />
+	</Properties>
+	<Events>
+		<Event name="autosize" comment="Fires when the autosize function is triggered.  The field may or may not have actually changed size according to the default logic, but this event provides a hook for the developer to apply additional logic at runtime to resize the field if needed." >
+			<Param name="this" type="Ext.form.Field" comment="This text field" />
+			<Param name="width" type="Number" comment="The new field width" />
+		</Event>
+		<Event name="keydown" comment="Keydown input field event. This event only fires if enableKeyEvents is set to true." >
+			<Param name="this" type="Ext.form.TextField" comment="This text field" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="keypress" comment="Keypress input field event. This event only fires if enableKeyEvents is set to true." >
+			<Param name="this" type="Ext.form.TextField" comment="This text field" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="keyup" comment="Keyup input field event. This event only fires if enableKeyEvents is set to true." >
+			<Param name="this" type="Ext.form.TextField" comment="This text field" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+	</Events>
+</Component>

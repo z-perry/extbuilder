@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.HtmlEditor" extends="Ext.form.Field" category="Form" label="HtmlEditor" xtype="htmleditor">
+	<Properties>
+		<Property name="createLinkText" type="String" comment="The default text for the create link prompt" />
+		<Property name="defaultLinkValue" type="String" comment="The default value for the create link prompt (defaults to http:/ /)" />
+		<Property name="enableAlignments" type="Boolean" comment="Enable the left, center, right alignment buttons (defaults to true)" />
+		<Property name="enableColors" type="Boolean" comment="Enable the fore/highlight color buttons (defaults to true)" />
+		<Property name="enableFont" type="Boolean" comment="Enable font selection. Not available in Safari. (defaults to true)" />
+		<Property name="enableFontSize" type="Boolean" comment="Enable the increase/decrease font size buttons (defaults to true)" />
+		<Property name="enableFormat" type="Boolean" comment="Enable the bold, italic and underline buttons (defaults to true)" />
+		<Property name="enableLinks" type="Boolean" comment="Enable the create link button. Not available in Safari. (defaults to true)" />
+		<Property name="enableLists" type="Boolean" comment="Enable the bullet and numbered list buttons. Not available in Safari. (defaults to true)" />
+		<Property name="enableSourceEdit" type="Boolean" comment="Enable the switch to source edit button. Not available in Safari. (defaults to true)" />
+		<Property name="fontFamilies" type="Array" comment="An array of available font families" />
+		<Property name="fieldClass" hide="true" />
+		<Property name="focusClass" hide="true" />
+		<Property name="autoCreate" hide="true" />
+		<Property name="inputType" hide="true" />
+		<Property name="invalidClass" hide="true" />
+		<Property name="invalidText" hide="true" />
+		<Property name="msgFx" hide="true" />
+		<Property name="validateOnBlur" hide="true" />
+		<Property name="allowDomMove" hide="true" />
+		<Property name="applyTo" hide="true" />
+		<Property name="autoHeight" hide="true" />
+		<Property name="autoWidth" hide="true" />
+		<Property name="cls" hide="true" />
+		<Property name="disabled" hide="true" />
+		<Property name="disabledClass" hide="true" />
+		<Property name="msgTarget" hide="true" />
+		<Property name="readOnly" hide="true" />
+		<Property name="style" hide="true" />
+		<Property name="validationDelay" hide="true" />
+		<Property name="validationEvent" hide="true" />
+		<Property name="tabIndex" hide="true" />
+	</Properties>
+	<Events>
+		<Event name="activate" comment="Fires when the editor is first receives the focus. Any insertion must wait until after this event." >
+			<Param name="this" type="HtmlEditor" />
+		</Event>
+		<Event name="beforepush" comment="Fires before the iframe editor is updated with content from the textarea. Return false to cancel the push." >
+			<Param name="this" type="HtmlEditor" />
+			<Param name="html" type="String" />
+		</Event>
+		<Event name="beforesync" comment="Fires before the textarea is updated with content from the editor iframe. Return false to cancel the sync." >
+			<Param name="this" type="HtmlEditor" />
+			<Param name="html" type="String" />
+		</Event>
+		<Event name="editmodechange" comment="Fires when the editor switches edit modes" >
+			<Param name="this" type="HtmlEditor" />
+			<Param name="sourceEdit" type="Boolean" comment="True if source edit, false if standard editing." />
+		</Event>
+		<Event name="initialize" comment="Fires when the editor is fully initialized (including the iframe)" >
+			<Param name="this" type="HtmlEditor" />
+		</Event>
+		<Event name="push" comment="Fires when the iframe editor is updated with content from the textarea." >
+			<Param name="this" type="HtmlEditor" />
+			<Param name="html" type="String" />
+		</Event>
+		<Event name="sync" comment="Fires when the textarea is updated with content from the editor iframe." >
+			<Param name="this" type="HtmlEditor" />
+			<Param name="html" type="String" />
+		</Event>
+		<Event name="blur" hide="true" />
+		<Event name="change" hide="true" />
+		<Event name="focus" hide="true" />
+		<Event name="specialkey" hide="true" />
+		<Event name="valid" hide="true" />
+	</Events>
+</Component>

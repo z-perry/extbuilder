@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.tree.TreeLoader" extends="Ext.util.Observable">
+<Properties>
+<Property name="baseAttrs" type="Object" />
+<Property name="baseParams" type="Object" />
+<Property name="clearOnLoad" type="Boolean" />
+<Property name="dataUrl" type="String" />
+<Property name="preloadChildren" type="Boolean" />
+<Property name="requestMethod" type="String" />
+<Property name="uiProviders" type="Object" />
+<Property name="url" type="String" />
+</Properties>
+<Events>
+<Event name="beforeload">
+<Param name="This" type="Object"/>
+<Param name="node" type="Object"/>
+<Param name="callback" type="Object"/>
+</Event>
+<Event name="load">
+<Param name="This" type="Object"/>
+<Param name="node" type="Object"/>
+<Param name="response" type="Object"/>
+</Event>
+<Event name="loadexception">
+<Param name="This" type="Object"/>
+<Param name="node" type="Object"/>
+<Param name="response" type="Object"/>
+</Event>
+</Events>
+</Component>

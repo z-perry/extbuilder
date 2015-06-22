@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.PagingToolbar" extends="Ext.Toolbar">
+<Properties>
+<Property name="displayInfo" type="Boolean" comment="True to display the displayMsg (defaults to false)" />
+<Property name="displayMsg" type="String" comment="The paging status message to display (defaults to 'Displaying {0} - {1} of {2}').  Note that this string is formatted using the braced numbers 0-2 as tokens that are replaced by the values for start, end and total respectively. These tokens should be preserved when overriding this string if showing those values is desired." />
+<Property name="emptyMsg" type="String" comment="The message to display when no records are found (defaults to 'No data to display')" />
+<Property name="pageSize" type="Number" comment="The number of records to display per page (defaults to 20)" />
+<Property name="store" type="Ext.data.Store" comment="The {@link Ext.data.Store} the paging toolbar should use as its data source (required)." />
+</Properties>
+<Events>
+</Events>
+</Component>

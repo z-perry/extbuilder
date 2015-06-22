@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.ArrayReader" extends="Ext.data.JsonReader">
+<Properties>
+<Property name="id" type="String" comment="(optional) The subscript within row Array that provides an ID for the Record @constructor Create a new ArrayReader @param {Object} meta Metadata configuration options. @param {Object} recordType Either an Array of field definition objects as specified to {@link Ext.data.Record#create}, or a {@link Ext.data.Record Record} constructor created using {@link Ext.data.Record#create}." />
+</Properties>
+<Events>
+</Events>
+</Component>

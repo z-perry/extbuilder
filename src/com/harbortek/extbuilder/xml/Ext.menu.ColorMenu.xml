@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.menu.ColorMenu" extends="Ext.menu.Menu">
+<Properties>
+</Properties>
+<Events>
+<Event name="select">
+<Param name="palette" type="ColorPalette"/>
+<Param name="color" type="String"/>
+</Event>
+</Events>
+</Component>

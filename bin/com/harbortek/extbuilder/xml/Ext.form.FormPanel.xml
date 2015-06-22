@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.FormPanel" extends="Ext.Panel" category="Container" label="FormPanel" xtype="form">
+	<Properties>
+		<Property name="buttonAlign" type="String" comment="Valid values are 'left,' 'center' and 'right' (defaults to 'center')" />
+		<Property name="formId" type="String" comment="(optional) The id of the FORM tag (defaults to an auto-generated id)." />
+		<Property name="itemCls" advanced="true" type="String" comment="A css class to apply to the x-form-item of fields. This property cascades to child containers." />
+		<Property name="labelAlign" type="String" comment="Valid values are 'left,' 'top' and 'right' (defaults to 'left'). This property cascades to child containers and can be overridden on any child container (e.g., a fieldset can specify a different labelAlign for its fields)." />
+		<Property name="labelWidth" type="Number" comment="The width of labels. This property cascades to child containers and can be overridden on any child container (e.g., a fieldset can specify a different labelWidth for its fields)." />
+		<Property name="minButtonWidth" advanced="true" type="Number" comment="Minimum width of all buttons in pixels (defaults to 75)" />
+		<Property name="monitorPoll" advanced="true" type="Number" comment="The milliseconds to poll valid state, ignored if monitorValid is not true (defaults to 200)" />
+		<Property name="monitorValid" advanced="true" type="Boolean" comment="If true the form monitors its valid state." />
+		<Property name="layout" type="String" default="form" />
+		<Property name="frame" type="Boolean" default="true" />
+	</Properties>
+	<Events>
+		<Event name="clientvalidation" comment="If the monitorValid config option is true, this event fires repetitively to notify of valid state" >
+			<Param name="this" type="Ext.form.FormPanel" />
+			<Param name="valid" type="Boolean" comment="true if the form has passed client-side validation" />
+		</Event>
+	</Events>
+</Component>

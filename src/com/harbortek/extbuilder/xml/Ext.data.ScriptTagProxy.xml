@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.ScriptTagProxy" extends="Ext.data.DataProxy">
+<Properties>
+<Property name="callbackParam" type="String" comment="(Optional) The name of the parameter to pass to the server which tells the server the name of the callback function set up by the load call to process the returned data object. Defaults to 'callback'.<p>The server-side processing must read this parameter value, and generate javascript output which calls this named function passing the data object as its only parameter." />
+<Property name="nocache" type="Boolean" comment="(optional) Defaults to true. Disable caching by adding a unique parameter name to the request." />
+<Property name="timeout" type="Number" comment="(optional) The number of milliseconds to wait for a response. Defaults to 30 seconds." />
+<Property name="url" type="String" comment="The URL from which to request the data object." />
+</Properties>
+<Events>
+<Event name="loadexception" comment="Fires if an exception occurs in the Proxy during data loading.  This event can be fired for one of two reasons: <ul><li><b>The load call timed out.</b>  This means the load callback did not execute within the time limit specified by {" >
+<Param name="this" type="Object" />
+<Param name="options" type="Object" comment="The loading options that were specified (see {@link #load} for details).  If the load" />
+<Param name="arg" type="Object" comment="The callback's arg object passed to the {@link #load} function" />
+<Param name="e" type="Error" comment="The JavaScript Error object caught if the configured Reader could not read the data." />
+</Event>
+</Events>
+</Component>

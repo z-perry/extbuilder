@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.Connection" extends="Ext.util.Observable">
+<Properties>
+<Property name="disableCachingParam" type="String" comment="(Optional) Change the parameter which is sent went disabling caching through a cache buster. Defaults to '_dc' @type String" />
+<Property name="url" hide="true" />
+<Property name="extraParams" hide="true" />
+<Property name="defaultHeaders" hide="true" />
+<Property name="method" hide="true" />
+<Property name="timeout" hide="true" />
+<Property name="autoAbort" hide="true" />
+<Property name="disableCaching" hide="true" />
+</Properties>
+<Events>
+<Event name="beforerequest" comment="Fires before a network request is made to retrieve a data object." >
+<Param name="conn" type="Connection" comment="This Connection object." />
+<Param name="options" type="Object" comment="The options config object passed to the {@link #request} method." />
+</Event>
+<Event name="requestcomplete" comment="Fires if the request was successfully completed." >
+<Param name="conn" type="Connection" comment="This Connection object." />
+<Param name="response" type="Object" comment="The XHR object containing the response data." />
+<Param name="options" type="Object" comment="The options config object passed to the {@link #request} method." />
+</Event>
+<Event name="requestexception" comment="Fires if an error HTTP status was returned from the server. See <a href='http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html'>HTTP Status Code Definitions</a> for details of HTTP status codes." >
+<Param name="conn" type="Connection" comment="This Connection object." />
+<Param name="response" type="Object" comment="The XHR object containing the response data." />
+<Param name="options" type="Object" comment="The options config object passed to the {@link #request} method." />
+</Event>
+</Events>
+</Component>

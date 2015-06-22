@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.StatusBar" extends="Ext.Toolbar">
+	<Properties>
+		<Property name="autoClear" type="Number" comment="The number of milliseconds to wait after setting the status via {@link #setStatus} before automatically clearing the status text and icon (defaults to 5000)." />
+		<Property name="busyIconCls" type="String" comment="The default {@link #iconCls} applied when calling {@link #showBusy} (defaults to 'x-status-busy'). " />
+		<Property name="busyText" type="String" comment="The default {@link #text} applied when calling {@link #showBusy} (defaults to 'Loading...'). " />
+		<Property name="cls" type="String" comment="The base class applied to the containing element for this component on render (defaults to 'x-statusbar')" />
+		<Property name="defaultIconCls" type="String" comment="The default {@link #iconCls} value (see the iconCls docs for additional details about customizing the icon). " />
+		<Property name="defaultText" type="String" comment="The default {@link #text} value.  " />
+		<Property name="iconCls" type="String" comment="A CSS class that will be applied to the status element and is expected to provide a background image that will serve as the status bar icon (defaults to ''). " />
+		<Property name="text" type="String" comment="A string that will be rendered into the status element as the status message (defaults to '');" />
+	</Properties>
+	<Events>
+	</Events>
+</Component>

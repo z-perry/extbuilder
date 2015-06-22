@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Extbuilder Plug-in
+Bundle-SymbolicName: com.harbortek.extbuilder.core;singleton:=true
+Bundle-Version: 0.9.1
+Bundle-Activator: com.harbortek.extbuilder.ExtBuilderActivator
+Bundle-Vendor: Harbortek
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.gef,
+ org.eclipse.ui.views.properties.tabbed,
+ org.eclipse.jface.text,
+ org.eclipse.core.resources,
+ org.eclipse.ui,
+ org.eclipse.ui.editors,
+ org.eclipse.ui.ide,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.core.runtime,
+ com.ibm.icu,
+ org.apache.xerces,
+ org.eclipse.jdt.core
+Eclipse-LazyStart: true
+Bundle-ClassPath: lib/commons-lang.jar,
+ .,
+ lib/dom4j-1.6.1.jar,
+ lib/com.spket.as.core_1.6.8.jar,
+ lib/com.spket.js_1.6.8.jar

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.grid.RowNumberer" extends="null">
+<Properties>
+<Property name="header" type="String" />
+<Property name="sortable" type="Boolean" />
+<Property name="width" type="Number" />
+</Properties>
+<Events>
+</Events>
+</Component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.menu.CheckItem" extends="Ext.menu.Item">
+<Properties>
+<Property name="checked" type="Boolean" />
+<Property name="group" type="String" />
+<Property name="groupClass" type="String" />
+<Property name="itemCls" type="String" />
+</Properties>
+<Events>
+<Event name="beforecheckchange">
+<Param name="this" type="Ext.menu.CheckItem"/>
+<Param name="checked" type="Boolean"/>
+</Event>
+<Event name="checkchange">
+<Param name="this" type="Ext.menu.CheckItem"/>
+<Param name="checked" type="Boolean"/>
+</Event>
+</Events>
+</Component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.grid.CellSelectionModel" extends="Ext.grid.AbstractSelectionModel">
+<Properties>
+</Properties>
+<Events>
+<Event name="beforecellselect">
+<Param name="this" type="SelectionModel"/>
+<Param name="rowIndex" type="Number"/>
+<Param name="colIndex" type="Number"/>
+</Event>
+<Event name="cellselect">
+<Param name="this" type="SelectionModel"/>
+<Param name="rowIndex" type="Number"/>
+<Param name="colIndex" type="Number"/>
+</Event>
+<Event name="selectionchange">
+<Param name="this" type="SelectionModel"/>
+<Param name="selection" type="Object"/>
+</Event>
+</Events>
+</Component>

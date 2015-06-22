@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.ContentPanel" extends="Ext.util.Observable">
+	<Properties>
+		<Property name="adjustments" type="Array" />
+		<Property name="autoCreate" type="Boolean/Object" />
+		<Property name="autoScroll" type="Boolean" />
+		<Property name="background" type="Boolean" />
+		<Property name="closable" type="Boolean" />
+		<Property name="fitContainer" type="Boolean" />
+		<Property name="fitToFrame" type="Boolean" />
+		<Property name="loadOnce" type="Boolean" />
+		<Property name="params" type="String/Object" />
+		<Property name="resizeEl" type="Mixed" />
+		<Property name="title" type="String" />
+		<Property name="toolbar" type="Toolbar" />
+		<Property name="url" type="String" />
+	</Properties>
+	<Events>
+		<Event name="activate" comment="Fires when this panel is activated." >
+			<Param name="this" type="Ext.ContentPanel" />
+		</Event>
+		<Event name="deactivate" comment="Fires when this panel is activated." >
+			<Param name="this" type="Ext.ContentPanel" />
+		</Event>
+		<Event name="resize" comment="Fires when this panel is resized if fitToFrame is true." >
+			<Param name="this" type="Ext.ContentPanel" />
+			<Param name="width" type="Number" comment="The width after any component adjustments" />
+			<Param name="height" type="Number" comment="The height after any component adjustments" />
+		</Event>
+	</Events>
+</Component>

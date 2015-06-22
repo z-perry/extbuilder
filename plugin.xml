@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.harbortek.extbuilder.ui.editors.ExtMultiPageEditor"
+            contributorClass="com.harbortek.extbuilder.ui.editors.ExtJsMultiPageEditorContributor"
+            extensions="ext"
+            icon="icons/extjs.gif"
+            id="com.harbortek.extbuilder.ui.editors.ExtMultiPageEditor"
+            name="ExtJs Editor"/>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="com.harbortek.extb.ui"
+            name="Web"/>
+      <wizard
+            category="com.harbortek.extb.ui"
+            class="com.harbortek.extbuilder.ui.wizards.ExtJsNewWizard"
+            icon="icons/extjs.gif"
+            id="com.harbortek.extb.ui.wizards.ExtJsNewWizard"
+            name="ExtJs Page"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.harbortek.extbuilder.ui.preferences.ExtJsPreferencePage"
+            id="com.harbortek.extbuilder.ui.preferences.ExtJsPreferencePage"
+            name="ExtJs Builder"/>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="com.harbortek.extbuilder.ui.preferences.PreferenceInitializer"/>
+   </extension>
+
+</plugin>

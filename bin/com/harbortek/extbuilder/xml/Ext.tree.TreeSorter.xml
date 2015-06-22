@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.tree.TreeSorter" extends="null">
+<Properties>
+<Property name="caseSensitive" type="Boolean" />
+<Property name="dir" type="String" />
+<Property name="folderSort" type="Boolean" />
+<Property name="leafAttr" type="String" />
+<Property name="property" type="String" />
+<Property name="sortType" type="Function" />
+</Properties>
+<Events>
+</Events>
+</Component>

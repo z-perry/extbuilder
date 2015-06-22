@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.HttpProxy" extends="Ext.data.DataProxy">
+<Properties>
+</Properties>
+<Events>
+<Event name="loadexception" comment="Fires if an exception occurs in the Proxy during data loading." >
+<Param name="this" type="Object" />
+<Param name="options" type="Object" comment="The loading options that were specified (see {@link #load} for details)" />
+<Param name="response" type="Object" comment="The XMLHttpRequest object containing the response data" />
+<Param name="e" type="Error" comment="The JavaScript Error object caught if the configured Reader could not read the data." />
+</Event>
+</Events>
+</Component>

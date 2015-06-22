@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.Toolbar" extends="Ext.BoxComponent">
+	<Properties>
+		<Property name="autoEl" hide="true" />
+	</Properties>
+	<Events>
+	</Events>
+</Component>

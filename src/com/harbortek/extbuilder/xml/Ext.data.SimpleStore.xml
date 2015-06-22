@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.SimpleStore" extends="Ext.data.Store">
+<Properties>
+<Property name="id" type="Number" comment="The array index of the record id. Leave blank to auto generate ids. @cfg {Array} fields An array of field definition objects, or field name strings. @cfg {Array} data The multi-dimensional array of data @constructor @param {Object} config" />
+</Properties>
+<Events>
+</Events>
+</Component>

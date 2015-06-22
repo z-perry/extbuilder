@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.grid.RowSelectionModel" extends="Ext.grid.AbstractSelectionModel">
+<Properties>
+<Property name="moveEditorOnEnter" type="Boolean" />
+<Property name="singleSelect" type="Boolean" />
+</Properties>
+<Events>
+<Event name="beforerowselect">
+<Param name="this" type="SelectionModel"/>
+<Param name="rowIndex" type="Number"/>
+<Param name="keepExisting" type="Boolean"/>
+<Param name="record" type="Record"/>
+</Event>
+<Event name="rowdeselect">
+<Param name="this" type="SelectionModel"/>
+<Param name="rowIndex" type="Number"/>
+<Param name="record" type="Record"/>
+</Event>
+<Event name="rowselect">
+<Param name="this" type="SelectionModel"/>
+<Param name="rowIndex" type="Number"/>
+<Param name="r" type="Ext.data.Record"/>
+</Event>
+<Event name="selectionchange">
+<Param name="this" type="SelectionModel"/>
+</Event>
+</Events>
+</Component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.grid.GroupingView" extends="Ext.grid.GridView">
+<Properties>
+<Property name="emptyGroupText" type="String" comment="The text to display when there is an empty group value" />
+<Property name="enableGrouping" type="Boolean" comment="False to disable grouping functionality (defaults to true)" />
+<Property name="enableGroupingMenu" type="Boolean" comment="True to enable the grouping control in the column menu" />
+<Property name="enableNoGroups" type="Boolean" comment="True to allow the user to turn off grouping" />
+<Property name="groupByText" type="String" comment="Text displayed in the grid header menu for grouping by a column (defaults to 'Group By This Field')." />
+<Property name="groupRenderer" type="Function" comment="The function used to format the grouping field value for display in the group header. Should return a string value. This takes the following parameters: <div class='mdetail-params'><ul> <li><b>v</b> : Object<p class='sub-desc'>The new value of the group field.</p></li> <li><b>unused</b> : undefined<p class='sub-desc'>Unused parameter.</p></li> <li><b>r</b> : Ext.data.Record<p class='sub-desc'>The Record providing the data for the row which caused group change.</p></li> <li><b>rowIndex</b> : Number<p class='sub-desc'>The row index of the Record which caused group change.</p></li> <li><b>colIndex</b> : Number<p class='sub-desc'>The column index of the group field.</p></li> <li><b>ds</b> : Ext.data.Store<p class='sub-desc'>The Store which is providing the data Model.</p></li> </ul></div></p>" />
+<Property name="groupTextTpl" type="String" comment="The template used to render the group header. This is used to format an object which contains the following properties: <div class='mdetail-params'><ul> <li><b>group</b> : String<p class='sub-desc'>The <i>rendered</i> value of the group field. By default this is the unchanged value of the group field. If a {@link #groupRenderer} is specified, it is the result of a call to that.</p></li> <li><b>gvalue</b> : Object<p class='sub-desc'>The <i>raw</i> value of the group field.</p></li> <li><b>text</b> : String<p class='sub-desc'>The configured {@link #header} (If {@link #showGroupName} is true) plus the <i>rendered</i>group field value.</p></li> <li><b>groupId</b> : String<p class='sub-desc'>A unique, generated ID which is applied to the View Element which contains the group.</p></li> <li><b>startRow</b> : Number<p class='sub-desc'>The row index of the Record which caused group change.</p></li> <li><b>rs</b> : Array<p class='sub-desc'>.Contains a single element: The Record providing the data for the row which caused group change.</p></li> <li><b>cls</b> : String<p class='sub-desc'>The generated class name string to apply to the group header Element.</p></li> <li><b>style</b> : String<p class='sub-desc'>The inline style rules to apply to the group header Element.</p></li> </ul></div></p> See {@link Ext.XTemplate} for information on how to format data using a template." />
+<Property name="header" type="String" comment="The text with which to prefix the group field value in the group header line." />
+<Property name="hideGroupedColumn" type="Boolean" comment="True to hide the column that is currently grouped" />
+<Property name="ignoreAdd" type="Boolean" comment="True to skip refreshing the view when new rows are added (defaults to false)" />
+<Property name="showGroupName" type="Boolean" comment="True to display the name for each set of grouped rows (defaults to true)" />
+<Property name="showGroupsText" type="String" comment="Text displayed in the grid header for enabling/disabling grouping (defaults to 'Show in Groups')." />
+<Property name="startCollapsed" type="Boolean" comment="True to start all groups collapsed" />
+</Properties>
+<Events>
+</Events>
+</Component>

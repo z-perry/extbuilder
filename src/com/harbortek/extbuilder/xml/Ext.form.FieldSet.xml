@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.FieldSet" extends="Ext.Panel" category="Container" label="FieldSet" xtype="fieldset">
+	<Properties>
+		<Property name="baseCls" type="String" advanced="true" comment="The base CSS class applied to the fieldset (defaults to 'x-fieldset')." />
+		<Property name="checkboxName" type="String" comment="The name to assign to the fieldset's checkbox if {@link #checkboxToggle} = true (defaults to '[checkbox id]-checkbox')." />
+		<Property name="checkboxToggle" type="Boolean" comment="True to render a checkbox into the fieldset frame just in front of the legend, or a DomHelper config object to create the checkbox.  (defaults to false). The fieldset will be expanded or collapsed when the checkbox is toggled." />
+		<Property name="itemCls" type="String" comment="A css class to apply to the x-form-item of fields. This property cascades to child containers." />
+		<Property name="labelWidth" type="Number" comment="The width of labels. This property cascades to child containers." />
+		<Property name="layout" type="String" default="form"  comment="(defaults to 'form')." />
+	</Properties>
+	<Events>
+		<Event name="activate" hide="true" />
+		<Event name="beforeclose" hide="true" />
+		<Event name="bodyresize" hide="true" />
+		<Event name="close" hide="true" />
+		<Event name="deactivate" hide="true" />
+	</Events>
+</Component>

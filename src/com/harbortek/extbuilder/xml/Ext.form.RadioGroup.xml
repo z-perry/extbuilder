@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.RadioGroup" extends="Ext.form.CheckboxGroup" category="Form" label="RadioGroup" xtype="radiogroup" isContainer="true" useXtype="true">
+	<Properties>
+	</Properties>
+	<Events>
+	</Events>
+</Component>

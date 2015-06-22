@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.BasicDialog" extends="Ext.util.Observable">
+	<Properties>
+		<Property name="animateTarget" type="String/Element" comment=" Id or element from which the dialog should animate while opening" />
+		<Property name="autoCreate" type="Boolean/DomHelper" comment=" True to auto create from scratch, or using a DomHelper Object (defaults to false)" />
+		<Property name="autoScroll" type="Boolean" comment=" True to allow the dialog body contents to overflow and display scrollbars (defaults to false)" />
+		<Property name="autoTabs" type="Boolean" comment=" If true, all elements with class 'x-dlg-tab' will get automatically converted to tabs (defaults to false)" />
+		<Property name="buttonAlign" type="String" comment=" Valid values are 'left,' 'center' and 'right' (defaults to 'right')" />
+		<Property name="closable" type="Boolean" comment=" False to remove the built-in top-right corner close button (defaults to true)" />
+		<Property name="collapsible" type="Boolean" comment=" False to remove the built-in top-right corner collapse button (defaults to true)" />
+		<Property name="constraintoviewport" type="Boolean" comment=" True to keep the dialog constrained within the visible viewport boundaries (defaults to true)" />
+		<Property name="draggable" type="Boolean" comment=" False to disable dragging of the dialog within the viewport (defaults to true)" />
+		<Property name="fixedcenter" type="Boolean" comment=" True to ensure that anytime the dialog is shown or resized it gets centered (defaults to false)" />
+		<Property name="handles" type="String} resizeHandles Which resize handles to display - see the {@link Ext.Resizable" comment=" config" />
+		<Property name="height" type="Number" comment=" Height of the dialog in pixels (can also be set via CSS).  Determined by browser if unspecified." />
+		<Property name="minButtonWidth" type="Number" comment=" Minimum width of all dialog buttons (defaults to 75)" />
+		<Property name="minHeight" type="Number" comment=" The minimum allowable height for a resizable dialog (defaults to 80)" />
+		<Property name="minWidth" type="Number" comment=" The minimum allowable width for a resizable dialog (defaults to 200)" />
+		<Property name="modal" type="Boolean" comment=" True to show the dialog modally, preventing user interaction with the rest of the page (defaults to false)" />
+		<Property name="proxyDrag" type="Boolean" comment=" True to drag a lightweight proxy element rather than the dialog itself, used when" />
+		<Property name="resizable" type="Boolean" comment=" False to disable manual dialog resizing (defaults to true)" />
+		<Property name="shadow" type="Boolean/String" comment=" True or 'sides' for the default effect, 'frame' for 4-way shadow, and 'drop' for bottom-right" />
+		<Property name="shadowOffset" type="Number" comment=" The number of pixels to offset the shadow if displayed (defaults to 5)" />
+		<Property name="shim" type="Boolean" comment=" True to create an iframe shim that prevents selects from showing through (defaults to false)" />
+		<Property name="syncHeightBeforeShow" type="Boolean" comment=" True to cause the dimensions to be recalculated before the dialog is shown (defaults to false)" />
+		<Property name="tabTag" type="String" comment=" The tag name of tab elements, used when autoTabs = true (defaults to 'div')" />
+		<Property name="title" type="String" comment=" Default text to display in the title bar (defaults to null)" />
+		<Property name="width" type="Number" comment=" Width of the dialog in pixels (can also be set via CSS).  Determined by browser if unspecified." />
+		<Property name="x" type="Number" comment=" The default left page coordinate of the dialog (defaults to center screen)" />
+		<Property name="y" type="Number" comment=" The default top page coordinate of the dialog (defaults to center screen)" />
+	</Properties>
+	<Events>
+		<Event name="beforehide" comment=" Fires before this dialog is hidden." >
+			<Param name="this" type="Ext.BasicDialog"/>
+		</Event>
+		<Event name="beforeshow" comment=" Fires before this dialog is shown." >
+			<Param name="this" type="Ext.BasicDialog"/>
+		</Event>
+		<Event name="hide" comment=" Fires when this dialog is hidden." >
+			<Param name="this" type="Ext.BasicDialog"/>
+		</Event>
+		<Event name="keydown" comment=" Fires when a key is pressed" >
+			<Param name="this" type="Ext.BasicDialog"/>
+			<Param name="e" type="Ext.EventObject"/>
+		</Event>
+		<Event name="move" comment=" Fires when this dialog is moved by the user." >
+			<Param name="this" type="Ext.BasicDialog"/>
+			<Param name="x" type="Number"/>
+			<Param name="y" type="Number"/>
+		</Event>
+		<Event name="resize" comment=" Fires when this dialog is resized by the user." >
+			<Param name="this" type="Ext.BasicDialog"/>
+			<Param name="width" type="Number"/>
+			<Param name="height" type="Number"/>
+		</Event>
+		<Event name="show" comment=" Fires when this dialog is shown." >
+			<Param name="this" type="Ext.BasicDialog"/>
+		</Event>
+	</Events>
+</Component>

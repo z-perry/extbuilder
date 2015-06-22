@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.ToolTip" extends="Ext.Tip">
+	<Properties>
+		<Property name="autoHide" type="Boolean" comment="True to automatically hide the tooltip after the mouse exits the target element or after the {@link #dismissDelay} has expired if set (defaults to true).  If {@link closable} = true a close tool button will be rendered into the tooltip header." />
+		<Property name="dismissDelay" type="Number" comment="Delay in milliseconds before the tooltip automatically hides (defaults to 5000). To disable automatic hiding, set dismissDelay = 0." />
+		<Property name="hideDelay" type="Number" comment="Delay in milliseconds after the mouse exits the target element but before the tooltip actually hides (defaults to 200).  Set to 0 for the tooltip to hide immediately." />
+		<Property name="mouseOffset" type="Array" comment="An XY offset from the mouse position where the tooltip should be shown (defaults to [15,18])." />
+		<Property name="showDelay" type="Number" comment="Delay in milliseconds before the tooltip displays after the mouse enters the target element (defaults to 500)" />
+		<Property name="target" type="Mixed" comment="The target HTMLElement, Ext.Element or id to associate with this tooltip." />
+		<Property name="trackMouse" type="Boolean" comment="True to have the tooltip follow the mouse as it moves over the target element (defaults to false)." />
+	</Properties>
+	<Events>
+	</Events>
+</Component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.Resizable" extends="Ext.util.Observable">
+<Properties>
+<Property name="constrainTo" type="Mixed" comment="Constrain the resize to a particular element" />
+<Property name="resizeChild" type="Boolean/String/Element" comment="True to resize the first child, or id/element to resize (defaults to false) @cfg {Array/String} adjustments String 'auto' or an array [width, height] with values to be <b>added</b> to the resize operation's new size (defaults to [0, 0]) @cfg {Number} minWidth The minimum width for the element (defaults to 5) @cfg {Number} minHeight The minimum height for the element (defaults to 5) @cfg {Number} maxWidth The maximum width for the element (defaults to 10000) @cfg {Number} maxHeight The maximum height for the element (defaults to 10000) @cfg {Boolean} enabled False to disable resizing (defaults to true) @cfg {Boolean} wrap True to wrap an element with a div if needed (required for textareas and images, defaults to false) @cfg {Number} width The width of the element in pixels (defaults to null) @cfg {Number} height The height of the element in pixels (defaults to null) @cfg {Boolean} animate True to animate the resize (not compatible with dynamic sizing, defaults to false) @cfg {Number} duration Animation duration if animate = true (defaults to .35) @cfg {Boolean} dynamic True to resize the element while dragging instead of using a proxy (defaults to false) @cfg {String} handles String consisting of the resize handles to display (defaults to undefined) @cfg {Boolean} multiDirectional <b>Deprecated</b>.  The old style of adding multi-direction resize handles, deprecated in favor of the handles config option (defaults to false) @cfg {Boolean} disableTrackOver True to disable mouse tracking. This is only applied at config time. (defaults to false) @cfg {String} easing Animation easing if animate = true (defaults to 'easingOutStrong') @cfg {Number} widthIncrement The increment to snap the width resize in pixels (dynamic must be true, defaults to 0) @cfg {Number} heightIncrement The increment to snap the height resize in pixels (dynamic must be true, defaults to 0) @cfg {Boolean} pinned True to ensure that the resize handles are always visible, false to display them only when the user mouses over the resizable borders. This is only applied at config time. (defaults to false) @cfg {Boolean} preserveRatio True to preserve the original ratio between height and width during resize (defaults to false) @cfg {Boolean} transparent True for transparent handles. This is only applied at config time. (defaults to false) @cfg {Number} minX The minimum allowed page X for the element (only used for west resizing, defaults to 0) @cfg {Number} minY The minimum allowed page Y for the element (only used for north resizing, defaults to 0) @cfg {Boolean} draggable Convenience to initialize drag drop (defaults to false) @constructor Create a new resizable component @param {Mixed} el The id or element to resize @param {Object} config configuration options" />
+<Property name="resizeRegion" type="Ext.lib.Region" comment="Constrain the resize to a particular region" />
+</Properties>
+<Events>
+<Event name="beforeresize" comment="Fired before resize is allowed. Set enabled to false to cancel resize." >
+<Param name="this" type="Ext.Resizable" />
+<Param name="e" type="Ext.EventObject" comment="The mousedown event" />
+</Event>
+<Event name="resize" comment="Fired after a resize." >
+<Param name="this" type="Ext.Resizable" />
+<Param name="width" type="Number" comment="The new width" />
+<Param name="height" type="Number" comment="The new height" />
+<Param name="e" type="Ext.EventObject" comment="The mouseup event" />
+</Event>
+</Events>
+</Component>

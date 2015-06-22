@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.View" extends="Ext.util.Observable">
+	<Properties>
+	</Properties>
+	<Events>
+		<Event name="beforeclick">
+			<Param name="this" type="Ext.View"/>
+			<Param name="index" type="Number"/>
+			<Param name="node" type="HTMLElement"/>
+			<Param name="e" type="Ext.EventObject"/>
+		</Event>
+		<Event name="beforeselect">
+			<Param name="this" type="Ext.View"/>
+			<Param name="node" type="HTMLElement"/>
+			<Param name="selections" type="Array"/>
+		</Event>
+		<Event name="click">
+			<Param name="this" type="Ext.View"/>
+			<Param name="index" type="Number"/>
+			<Param name="node" type="HTMLElement"/>
+			<Param name="e" type="Ext.EventObject"/>
+		</Event>
+		<Event name="contextmenu">
+			<Param name="this" type="Ext.View"/>
+			<Param name="index" type="Number"/>
+			<Param name="node" type="HTMLElement"/>
+			<Param name="e" type="Ext.EventObject"/>
+		</Event>
+		<Event name="dblclick">
+			<Param name="this" type="Ext.View"/>
+			<Param name="index" type="Number"/>
+			<Param name="node" type="HTMLElement"/>
+			<Param name="e" type="Ext.EventObject"/>
+		</Event>
+		<Event name="selectionchange">
+			<Param name="this" type="Ext.View"/>
+			<Param name="selections" type="Array"/>
+		</Event>
+	</Events>
+</Component>

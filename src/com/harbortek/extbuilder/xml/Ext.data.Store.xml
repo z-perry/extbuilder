@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.Store" extends="Ext.util.Observable">
+<Properties>
+<Property name="autoLoad" type="Boolean/Object" comment="If passed, this store's load method is automatically called after creation with the autoLoad object" />
+<Property name="baseParams" type="Object" comment="An object containing properties which are to be sent as parameters on any HTTP request" />
+<Property name="data" type="Array" comment="Inline data to be loaded when the store is initialized." />
+<Property name="proxy" type="Ext.data.DataProxy" comment="The Proxy object which provides access to a data object." />
+<Property name="pruneModifiedRecords" type="boolean" comment="True to clear all modified record information each time the store is loaded or when a record is removed. (defaults to false)." />
+<Property name="reader" type="Ext.data.DataReader" comment="The DataReader object which processes the data object and returns an Array of Ext.data.Record objects which are cached keyed by their <em>id</em> property." />
+<Property name="remoteSort" type="boolean" comment="True if sorting is to be handled by requesting the Proxy to provide a refreshed version of the data object in sorted order, as opposed to sorting the Record cache in place (defaults to false). <p>If remote sorting is specified, then clicking on a column header causes the current page to be requested from the server with the addition of the following two parameters: <div class='mdetail-params'><ul> <li><b>sort</b> : String<p class='sub-desc'>The name (as specified in the Record's Field definition) of the field to sort on.</p></li> <li><b>dir</b> : String<p class='sub-desc'>The direction of the sort, 'ASC' or 'DESC' (case-sensitive).</p></li> </ul></div></p>" />
+<Property name="sortInfo" type="Object" comment="A config object in the format: {field: 'fieldName', direction: 'ASC|DESC'}.  The direction property is case-sensitive." />
+<Property name="storeId" type="String" comment="If passed, the id to use to register with the StoreMgr" />
+<Property name="url" type="String" comment="If passed, an HttpProxy is created for the passed URL" />
+</Properties>
+<Events>
+<Event name="add" comment="Fires when Records have been added to the Store" >
+<Param name="this" type="Store" />
+<Param name="records" type="Ext.data.Record[]" comment="The array of Records added" />
+<Param name="index" type="Number" comment="The index at which the record(s) were added" />
+</Event>
+<Event name="beforeload" comment="Fires before a request is made for a new data object.  If the beforeload handler returns false the load action will be canceled." >
+<Param name="this" type="Store" />
+<Param name="options" type="Object" comment="The loading options that were specified (see {@link #load} for details)" />
+</Event>
+<Event name="clear" comment="Fires when the data cache has been cleared." >
+<Param name="this" type="Store" />
+</Event>
+<Event name="datachanged" comment="Fires when the data cache has changed, and a widget which is using this Store as a Record cache should refresh its view." >
+<Param name="this" type="Store" />
+</Event>
+<Event name="load" comment="Fires after a new set of Records has been loaded." >
+<Param name="this" type="Store" />
+<Param name="records" type="Ext.data.Record[]" comment="The Records that were loaded" />
+<Param name="options" type="Object" comment="The loading options that were specified (see {@link #load} for details)" />
+</Event>
+<Event name="loadexception" comment="Fires if an exception occurs in the Proxy during loading. Called with the signature of the Proxy's 'loadexception' event." >
+</Event>
+<Event name="metachange" comment="Fires when this store's reader provides new metadata (fields). This is currently only supported for JsonReaders." >
+<Param name="this" type="Store" />
+<Param name="meta" type="Object" comment="The JSON metadata" />
+</Event>
+<Event name="remove" comment="Fires when a Record has been removed from the Store" >
+<Param name="this" type="Store" />
+<Param name="record" type="Ext.data.Record" comment="The Record that was removed" />
+<Param name="index" type="Number" comment="The index at which the record was removed" />
+</Event>
+<Event name="update" comment="Fires when a Record has been updated" >
+<Param name="this" type="Store" />
+<Param name="record" type="Ext.data.Record" comment="The Record that was updated" />
+<Param name="operation" type="String" comment="The update operation being performed.  Value may be one of:" />
+</Event>
+</Events>
+</Component>

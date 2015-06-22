@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.Tip" extends="Ext.Panel">
+<Properties>
+<Property name="closable" type="Boolean" />
+<Property name="defaultAlign" type="String" />
+<Property name="maxWidth" type="Number" />
+<Property name="minWidth" type="Number" />
+<Property name="shadow" type="Boolean/String" />
+<Property name="width" type="Number" />
+</Properties>
+<Events>
+</Events>
+</Component>

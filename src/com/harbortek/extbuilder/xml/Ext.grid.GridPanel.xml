@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.grid.GridPanel" extends="Ext.Panel" category="Container" label="GridPanel" xtype="grid" useXtype="false" useVariableName="true">
+	<Properties>
+		<Property name="enableDragDrop" type="Boolean" advanced="true" comment="True to enable dragging of the selected rows of the GridPanel." />
+		<Property name="autoExpandColumn" type="String" advanced="true" comment="The id of a column in this grid that should expand to fill unused space. This id can not be 0." />
+		<Property name="autoExpandMax" type="Number" advanced="true" comment="The maximum width the autoExpandColumn can have (if enabled). Defaults to 1000." />
+		<Property name="autoExpandMin" type="Number" advanced="true" comment="The minimum width the autoExpandColumn can have (if enabled). defaults to 50." />
+		<Property name="columns" type="Ext.grid.ColumnModel" comment="An array of columns to auto create a ColumnModel" />
+		<Property name="deferRowRender" type="Boolean" advanced="true" comment="True to enable deferred row rendering. Default is true." />
+		<Property name="disableSelection" type="Boolean" advanced="true" comment="True to disable selections in the grid (defaults to false). - ignored if a SelectionModel is specified" />
+		<Property name="enableColumnHide" type="Boolean" advanced="true" comment="True to enable hiding of columns with the header context menu." />
+		<Property name="enableColumnMove" type="Boolean" advanced="true" comment="True to enable drag and drop reorder of columns." />
+		<Property name="enableColumnResize" type="Boolean" advanced="true" comment="False to turn off column resizing for the whole grid (defaults to true)." />
+		<Property name="enableHdMenu" type="Boolean" advanced="true" comment="True to enable the drop down button for menu in the headers." />
+		<Property name="hideHeaders" type="Boolean" advanced="true" comment="True to hide the grid's header (defaults to false)." />
+		<Property name="loadMask" type="Object" advanced="true" comment="An {@link Ext.LoadMask} config or true to mask the grid while loading (defaults to false)." />
+		<Property name="maxHeight" type="Number" comment="Sets the maximum height of the grid - ignored if autoHeight is not on." />
+		<Property name="minColumnWidth" type="Number" comment="The minimum width a column can be resized to. Defaults to 25." />
+		<Property name="selModel" type="Ext.grid.SelectionModel" comment="Any subclass of AbstractSelectionModel that will provide the selection model for the grid (defaults to {@link Ext.grid.RowSelectionModel} if not specified)." />
+		<Property name="store" type="Ext.data.Store" comment="The {@link Ext.data.Store} the grid should use as its data source (required)." />
+		<Property name="stripeRows" type="Boolean" comment="True to stripe the rows. Default is false." />
+		<Property name="trackMouseOver" type="Boolean" comment="True to highlight rows when the mouse is over. Default is true." />
+		<Property name="view" type="Object" advanced="true" comment="The {@link Ext.grid.GridView} used by the grid. This can be set before a call to render()." />
+		<Property name="viewConfig" type="Object" comment="A config object that will be applied to the grid's UI view.  Any of the config options available for {@link Ext.grid.GridView} can be specified here." />
+		<Property name="allowDomMove" hide="true" />
+		<Property name="autoEl" hide="true" />
+		<Property name="applyTo" hide="true" />
+		<Property name="autoScroll" hide="true" />
+		<Property name="bodyBorder" hide="true" />
+		<Property name="bodyStyle" hide="true" />
+		<Property name="contentEl" hide="true" />
+		<Property name="disabledClass" hide="true" />
+		<Property name="elements" hide="true" />
+		<Property name="html" hide="true" />
+	</Properties>
+	<Events>
+		<Event name="bodyscroll" comment="Fires when the body element is scrolled" >
+			<Param name="scrollLeft" type="Number" />
+			<Param name="scrollTop" type="Number" />
+		</Event>
+		<Event name="cellclick" comment="Fires when a cell is clicked. The data for the cell is drawn from the {" >
+			<Param name="this" type="Grid" />
+			<Param name="rowIndex" type="Number" />
+			<Param name="columnIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="cellcontextmenu" comment="Fires when a cell is right clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="rowIndex" type="Number" />
+			<Param name="cellIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="celldblclick" comment="Fires when a cell is double clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="rowIndex" type="Number" />
+			<Param name="columnIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="cellmousedown" comment="Fires before a cell is clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="rowIndex" type="Number" />
+			<Param name="columnIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="click" comment="The raw click event for the entire grid." >
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="columnmove" comment="Fires when the user moves a column" >
+			<Param name="oldIndex" type="Number" />
+			<Param name="newIndex" type="Number" />
+		</Event>
+		<Event name="columnresize" comment="Fires when the user resizes a column" >
+			<Param name="columnIndex" type="Number" />
+			<Param name="newSize" type="Number" />
+		</Event>
+		<Event name="contextmenu" comment="The raw contextmenu event for the entire grid." >
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="dblclick" comment="The raw dblclick event for the entire grid." >
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="headerclick" comment="Fires when a header is clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="columnIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="headercontextmenu" comment="Fires when a header is right clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="columnIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="headerdblclick" comment="Fires when a header cell is double clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="columnIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="headermousedown" comment="Fires before a header is clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="columnIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="keydown" comment="The raw keydown event for the entire grid." >
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="keypress" comment="The raw keypress event for the entire grid." >
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="mousedown" comment="The raw mousedown event for the entire grid." >
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="mouseout" comment="The raw mouseout event for the entire grid." >
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="mouseover" comment="The raw mouseover event for the entire grid." >
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="mouseup" comment="The raw mouseup event for the entire grid." >
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="rowclick" comment="Fires when a row is clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="rowIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="rowcontextmenu" comment="Fires when a row is right clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="rowIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="rowdblclick" comment="Fires when a row is double clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="rowIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="rowmousedown" comment="Fires before a row is clicked" >
+			<Param name="this" type="Grid" />
+			<Param name="rowIndex" type="Number" />
+			<Param name="e" type="Ext.EventObject" />
+		</Event>
+		<Event name="sortchange" comment="Fires when the grid's store sort changes" >
+			<Param name="this" type="Grid" />
+			<Param name="sortInfo" type="Object" comment="An object with the keys field and direction" />
+		</Event>
+	</Events>
+</Component>

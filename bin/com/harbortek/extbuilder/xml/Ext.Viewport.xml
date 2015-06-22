@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.Viewport" extends="Ext.Container">
+<Properties>
+<Property name="allowDomMove" type="Boolean" />
+<Property name="applyTo" type="Mixed" />
+<Property name="autoHeight" type="Boolean" />
+<Property name="autoWidth" type="Boolean" />
+<Property name="deferHeight" type="Boolean" />
+<Property name="height" type="Number" />
+<Property name="hideParent" type="Boolean" />
+<Property name="monitorResize" type="Boolean" />
+<Property name="renderTo" type="Mixed" />
+<Property name="width" type="Number" />
+</Properties>
+<Events>
+</Events>
+</Component>

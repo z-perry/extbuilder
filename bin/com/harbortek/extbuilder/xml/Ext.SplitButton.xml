@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.SplitButton" extends="Ext.Button" category="Control" label="SplitButton" xtype="splitbutton">
+	<Properties>
+		<Property name="arrowHandler" type="Function" comment="A function called when the arrow button is clicked (can be used instead of click event) @cfg {String} arrowTooltip The title attribute of the arrow @constructor Create a new menu button @param {Object} config The config object" />
+	</Properties>
+	<Events>
+		<Event name="arrowclick" comment="Fires when this button's arrow is clicked" >
+			<Param name="this" type="MenuButton" />
+			<Param name="e" type="EventObject" comment="The click event" />
+		</Event>
+	</Events>
+</Component>

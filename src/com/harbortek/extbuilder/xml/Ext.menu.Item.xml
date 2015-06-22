@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.menu.Item" extends="Ext.menu.BaseItem">
+<Properties>
+<Property name="canActivate" type="Boolean" />
+<Property name="href" type="String" />
+<Property name="hrefTarget" type="String" />
+<Property name="icon" type="String" />
+<Property name="iconCls" type="String" />
+<Property name="itemCls" type="String" />
+<Property name="menu" type="Mixed" />
+<Property name="showDelay" type="Number" />
+<Property name="text" type="String" />
+</Properties>
+<Events>
+</Events>
+</Component>

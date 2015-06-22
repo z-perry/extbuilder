@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.CycleButton" extends="Ext.SplitButton" category="Control" label="CycleButton" xtype="cycle">
+	<Properties>
+		<Property name="changeHandler" type="Function" comment="A callback function that will be invoked each time the active menu item in the button's menu has changed.  If this callback is not supplied, the SplitButton will instead fire the {@link #change} event on active item change.  The changeHandler function will be called with the following argument list: (SplitButton this, Ext.menu.CheckItem item)" />
+		<Property name="forceIcon" type="String" comment="A css class which sets an image to be used as the static icon for this button.  This icon will always be displayed regardless of which item is selected in the dropdown list.  This overrides the default behavior of changing the button's icon to match the selected item's icon on change." />
+		<Property name="items" type="Array" comment="An array of Ext.menu.CheckItem"/> 
+		<Property name="prependText" type="String" comment="A static string to prepend before the active item's text when displayed as the button's text (only applies when showText = true, defaults to '')" />
+		<Property name="showText" type="Boolean" comment="True to display the active item's text as the button text (defaults to false)" />
+	</Properties>
+	<Events>
+		<Event name="change" comment="Fires after the button's active menu item has changed.  Note that if a {" >
+			<Param name="this" type="Ext.CycleButton" />
+			<Param name="item" type="Ext.menu.CheckItem" comment="The menu item that was selected" />
+		</Event>
+	</Events>
+</Component>

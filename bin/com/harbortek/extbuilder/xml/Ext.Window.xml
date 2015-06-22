@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.Window" extends="Ext.Panel" xtype="window">
+	<Properties>
+		<Property name="animateTarget" type="String/Element" comment="Id or element from which the window should animate while opening (defaults to null with no animation)." />
+		<Property name="baseCls" type="String" comment="The base CSS class to apply to this panel's element (defaults to 'x-window')." />
+		<Property name="closable" type="Boolean" comment="True to display the 'close' tool button and allow the user to close the window." />
+		<Property name="closeAction" type="String" comment="The action to take when the close button is clicked.  The default action is 'close' which will actually remove the window from the DOM and destroy it.  The other valid option is 'hide' which will simply hide the window by setting visibility to hidden and applying negative offsets, keeping the window available to be redisplayed via the {@link #show} method." />
+		<Property name="constrain" type="Boolean" comment="True to constrain the window to the viewport, false to allow it to fall outside of the viewport (defaults to false).  Optionally the header only can be constrained using {@link #constrainHeader}." />
+		<Property name="constrainHeader" type="Boolean" comment="True to constrain the window header to the viewport, allowing the window body to fall outside of the viewport, false to allow the header to fall outside the viewport (defaults to false).  Optionally the entire window can be constrained using {@link #constrain}." />
+		<Property name="defaultButton" type="String/Number/Button" comment="The id / index of a button or a button instance to focus when this window received the focus." />
+		<Property name="draggable" type="Boolean" comment="True to allow the window to be dragged by the header bar, false to disable dragging (defaults to true).  Note that by default the window will be centered in the viewport, so if dragging is disabled the window may need to be positioned programmatically after render (e.g., myWindow.setPosition(100, 100);)." />
+		<Property name="expandOnShow" type="Boolean" comment="True to always expand the window when it is displayed, false to keep it in its current state (which may be collapsed) when displayed (defaults to true)." />
+		<Property name="manager" type="Ext.WindowGroup" comment="A reference to the WindowGroup that should manage this window (defaults to {@link Ext.WindowMgr})." />
+		<Property name="maximizable" type="Boolean" comment="True to display the 'maximize' tool button and allow the user to maximize the window, false to hide the button and disallow maximizing the window (defaults to false).  Note that when a window is maximized, the tool button will automatically change to a 'restore' button with the appropriate behavior already built-in that will restore the window to its previous size." />
+		<Property name="minHeight" type="Number" comment="The minimum height in pixels allowed for this window (defaults to 100).  Only applies when resizable = true." />
+		<Property name="minWidth" type="Number" comment="The minimum width in pixels allowed for this window (defaults to 200).  Only applies when resizable = true." />
+		<Property name="minimizable" type="Boolean" comment="True to display the 'minimize' tool button and allow the user to minimize the window, false to hide the button and disallow minimizing the window (defaults to false).  Note that this button provides no implementation -- the behavior of minimizing a window is implementation-specific, so the minimize event must be handled and a custom minimize behavior implemented for this option to be useful." />
+		<Property name="modal" type="Boolean" comment="True to make the window modal and mask everything behind it when displayed, false to display it without restricting access to other UI elements (defaults to false)." />
+		<Property name="onEsc" type="Function" comment="Allows override of the built-in processing for the escape key. Default action is to close the Window (performing whatever action is specified in {@link #closeAction}. To prevent the Window closing when the escape key is pressed, specify this as Ext.emptyFn (See {@link Ext#emptyFn})." />
+		<Property name="plain" type="Boolean" comment="True to render the window body with a transparent background so that it will blend into the framing elements, false to add a lighter background color to visually highlight the body element and separate it more distinctly from the surrounding frame (defaults to false)." />
+		<Property name="resizable" type="Boolean" comment="True to allow user resizing at each edge and corner of the window, false to disable resizing (defaults to true)." />
+		<Property name="resizeHandles" type="String" comment="A valid {@link Ext.Resizable} handles config string (defaults to 'all').  Only applies when resizable = true." />
+		<Property name="x" type="Number" comment="The X position of the left edge of the Window on initial showing. Defaults to centering the Window within the width of the Window's container {@link Ext.Element Element) (The Element that the Window is rendered to)." />
+		<Property name="y" type="Number" comment="The Y position of the top edge of the Window on initial showing. Defaults to centering the Window within the height of the Window's container {@link Ext.Element Element) (The Element that the Window is rendered to)." />
+		<Property name="monitorResize" hide="true" />
+		<Property name="autoWidth" hide="true" />
+		<Property name="width" type="Number" default="600"/>
+		<Property name="height" type="Number" default="400"/>
+	</Properties>
+	<Events>
+		<Event name="activate" comment="Fires after the window has been visually activated via {" >
+			<Param name="this" type="Ext.Window" />
+		</Event>
+		<Event name="deactivate" comment="Fires after the window has been visually deactivated via {" >
+			<Param name="this" type="Ext.Window" />
+		</Event>
+		<Event name="maximize" comment="Fires after the window has been maximized." >
+			<Param name="this" type="Ext.Window" />
+		</Event>
+		<Event name="minimize" comment="Fires after the window has been minimized." >
+			<Param name="this" type="Ext.Window" />
+		</Event>
+		<Event name="resize" comment="Fires after the window has been resized." >
+			<Param name="this" type="Ext.Window" />
+			<Param name="width" type="Number" comment="The window's new width" />
+			<Param name="height" type="Number" comment="The window's new height" />
+		</Event>
+		<Event name="restore" comment="Fires after the window has been restored to its original size after being maximized." >
+			<Param name="this" type="Ext.Window" />
+		</Event>
+	</Events>
+</Component>

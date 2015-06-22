@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component category="Container" label="Panel" extClass="Ext.Panel" extends="Ext.Container" xtype="panel" useXtype="true" useVariableName="false" >
+	<Properties>
+		<Property name="animCollapse" type="Boolean" advanced="true" comment="True to animate the transition when the panel is collapsed, false to skip the animation (defaults to true if the {@link Ext.Fx} class is available, otherwise false)." />
+		<Property name="applyTo" type="Mixed" advanced="true" comment="The id of the node, a DOM node or an existing Element corresponding to a DIV that is already present in the document that specifies some panel-specific structural markup." />
+		<Property name="autoLoad" type="Object/String/Function" advanced="true" comment="A valid url spec according to the Updater {@link Ext.Updater#update} method. If autoLoad is not null, the panel will attempt to load its contents immediately upon render.The URL will become the default URL for this panel's {@link #body} element, so it may be {@link Ext.Element#refresh refresh}ed at any time." />
+		<Property name="autoScroll" type="Boolean" comment="True to use overflow:'auto' on the panel's body element and show scroll bars automatically when necessary, false to clip any overflowing content (defaults to false)." />
+		<Property name="baseCls" type="String" advanced="true" comment="The base CSS class to apply to this panel's element (defaults to 'x-panel')." />
+		<Property name="bbar" type="Ext.Toolbar" comment="The bottom toolbar of the panel. This can be a {@link Ext.Toolbar} object, a toolbar config, or an array of buttons/button configs to be added to the toolbar.  Note that this is not available as a property after render. To access the bottom toolbar after render, use {@link #getBottomToolbar}." />
+		<Property name="bodyBorder" type="Boolean" comment="True to display an interior border on the body element of the panel, false to hide it (defaults to true). This only applies when {@link #border} == true.  If border == true and bodyBorder == false, the border will display as a 1px wide inset border, giving the entire body element an inset appearance." />
+		<Property name="bodyStyle" type="String/Object/Function" comment="Custom CSS styles to be applied to the body element in the format expected by {@link Ext.Element#applyStyles} (defaults to null)." />
+		<Property name="border" type="Boolean" comment="True to display the borders of the panel's body element, false to hide them (defaults to true).  By default, the border is a 2px wide inset border, but this can be further altered by setting {@link #bodyBorder} to false." />
+		<Property name="buttonAlign" type="Combox" values="left,center,right" comment="The alignment of any buttons added to this panel.  Valid values are 'right,' 'left' and 'center' (defaults to 'right')." />
+		<Property name="buttons" type="Ext.ButtonArray" comment="An array of {@link Ext.Button}s or {@link Ext.Button} configs used to add buttons to the footer of this panel." />
+		<Property name="collapseFirst" type="Boolean" comment="True to make sure the collapse/expand toggle button always renders first (to the left of) any other tools in the panel's title bar, false to render it last (defaults to true)." />
+		<Property name="collapsed" type="Boolean" comment="True to render the panel collapsed, false to render it expanded (defaults to false)." />
+		<Property name="collapsedCls" type="String" advanced="true" comment="A CSS class to add to the panel's element after it has been collapsed (defaults to 'x-panel-collapsed')." />
+		<Property name="collapsible" type="Boolean" comment="True to make the panel collapsible and have the expand/collapse toggle button automatically rendered into the header tool button area, false to keep the panel statically sized with no button (defaults to false)." />
+		<Property name="contentEl" type="String" advanced="true" comment="The id of an existing HTML node to use as the panel's body content (defaults to '')." />
+		<Property name="disabled" type="Boolean" advanced="true" comment="Render this panel disabled (default is false)." />
+		<Property name="draggable" type="Boolean" advanced="true" comment="True to enable dragging of this Panel (defaults to false). " />
+		<Property name="floating" type="Boolean" comment="True to float the panel (absolute position it with automatic shimming and shadow), false to display it inline where it is rendered (defaults to false).  Note that by default, setting floating to true will cause the panel to display at negative offsets so that it is hidden -- because the panel is absolute positioned, the position must be set explicitly after render (e.g., myPanel.setPosition(100,100);).  Also, when floating a panel you should always assign a fixed width, otherwise it will be auto width and will expand to fill to the right edge of the viewport." />
+		<Property name="footer" type="Boolean" comment="True to create the footer element explicitly, false to skip creating it.  By default, when footer is not specified, if one or more buttons have been added to the panel the footer will be created automatically, otherwise it will not." />
+		<Property name="frame" type="Boolean" comment="True to render the panel with custom rounded borders, false to render with plain 1px square borders (defaults to false)." />
+		<Property name="header" type="Boolean" comment="True to create the header element explicitly, false to skip creating it.  By default, when header is not specified, if a {@link #title} is set the header will be created automatically, otherwise it will not.  If a title is set but header is explicitly set to false, the header will not be rendered." />
+		<Property name="headerAsText" type="Boolean" comment="True to display the panel title in the header, false to hide it (defaults to true)." />
+		<Property name="hideCollapseTool" type="Boolean" comment="True to hide the expand/collapse toggle button when {@link #collapsible} = true, false to display it (defaults to false)." />
+		<Property name="html" type="String/Object" advanced="true" comment="An HTML fragment, or a {@link Ext.DomHelper DomHelper} specification to use as the panel's body content (defaults to '')." />
+		<Property name="iconCls" type="String" advanced="true" comment="A CSS class that will provide a background image to be used as the header icon (defaults to '').  An example custom icon class would be something like: .my-icon { background: url(../images/my-icon.gif) 0 6px no-repeat !important;}" />
+		<Property name="keys" type="Object/Array" advanced="true" comment="A KeyMap config object (in the format expected by {@link Ext.KeyMap#addBinding} used to assign custom key handling to this panel (defaults to null)." />
+		<Property name="maskDisabled" type="Boolean" advanced="true" comment="True to mask the panel when it is disabled, false to not mask it (defaults to true).  Either way, the panel will always tell its contained elements to disable themselves when it is disabled, but masking the panel can provide an additional visual cue that the panel is disabled." />
+		<Property name="minButtonWidth" type="Number" advanced="true" comment="Minimum width in pixels of all buttons in this panel (defaults to 75)" />
+		<Property name="shadow" type="Boolean/String" advanced="true" comment="True (or a valid Ext.Shadow {@link Ext.Shadow#mode} value) to display a shadow behind the panel, false to display no shadow (defaults to 'sides').  Note that this option only applies when floating = true." />
+		<Property name="shadowOffset" type="Number"  advanced="true" comment="The number of pixels to offset the shadow if displayed (defaults to 4). Note that this option only applies when floating = true." />
+		<Property name="shim" type="Boolean" advanced="true" comment="False to disable the iframe shim in browsers which need one (defaults to true).  Note that this option only applies when floating = true." />
+		<Property name="tabTip" type="String" advanced="true" comment="Adds a tooltip when mousing over the tab of a Ext.Panel which is an item of a Ext.TabPanel. Ext.QuickTips.init() must be called in order for the tips to render." />
+		<Property name="tbar" type="Ext.Toolbar" comment="The top toolbar of the panel. This can be a {@link Ext.Toolbar} object, a toolbar config, or an array of buttons/button configs to be added to the toolbar.  Note that this is not available as a property after render. To access the top toolbar after render, use {@link #getTopToolbar}." />
+		<Property name="title" type="String" comment="The title text to display in the panel header (defaults to '').  When a title is specified the header element will automatically be created and displayed unless {@link #header} is explicitly set to false.  If you don't want to specify a title at config time, but you may want one later, you must either specify a non-empty title (a blank space ' ' will do) or header:true so that the container element will get created." />
+		<Property name="titleCollapse" type="Boolean" comment="True to allow expanding and collapsing the panel (when {@link #collapsible} = true) by clicking anywhere in the header bar, false to allow it only by clicking to tool button (defaults to false)." />
+		<Property name="tools" type="Array" comment="An array of tool button configs to be added to the header tool area. " />
+		<Property name="autoEl" hide="true" />
+	</Properties>
+	<Events>
+		<Event name="activate" comment="Fires after the Panel has been visually activated. Note that Panels do not directly support being activated, but some Panel subclasses do (like {" >
+			<Param name="p" type="Ext.Panel" comment="The Panel that has been activated." />
+		</Event>
+		<Event name="beforeclose" comment="Fires before the Panel is closed.  Note that Panels do not directly support being closed, but some Panel subclasses do (like {" >
+			<Param name="p" type="Ext.Panel" comment="The Panel being closed." />
+		</Event>
+		<Event name="beforecollapse" comment="Fires before the Panel is collapsed.  A handler can return false to cancel the collapse." >
+			<Param name="p" type="Ext.Panel" comment="the Panel being collapsed." />
+			<Param name="animate" type="Boolean" comment="True if the collapse is animated, else false." />
+		</Event>
+		<Event name="beforeexpand" comment="Fires before the Panel is expanded.  A handler can return false to cancel the expand." >
+			<Param name="p" type="Ext.Panel" comment="The Panel being expanded." />
+			<Param name="animate" type="Boolean" comment="True if the expand is animated, else false." />
+		</Event>
+		<Event name="bodyresize" comment="Fires after the Panel has been resized." >
+			<Param name="p" type="Ext.Panel" comment="the Panel which has been resized." />
+			<Param name="width" type="Number" comment="The Panel's new width." />
+			<Param name="height" type="Number" comment="The Panel's new height." />
+		</Event>
+		<Event name="close" comment="Fires after the Panel is closed.  Note that Panels do not directly support being closed, but some Panel subclasses do (like {" >
+			<Param name="p" type="Ext.Panel" comment="The Panel that has been closed." />
+		</Event>
+		<Event name="collapse" comment="Fires after the Panel has been collapsed." >
+			<Param name="p" type="Ext.Panel" comment="the Panel that has been collapsed." />
+		</Event>
+		<Event name="deactivate" comment="Fires after the Panel has been visually deactivated. Note that Panels do not directly support being deactivated, but some Panel subclasses do (like {" >
+			<Param name="p" type="Ext.Panel" comment="The Panel that has been deactivated." />
+		</Event>
+		<Event name="expand" comment="Fires after the Panel has been expanded." >
+			<Param name="p" type="Ext.Panel" comment="The Panel that has been expanded." />
+		</Event>
+		<Event name="titlechange" comment="Fires after the Panel title has been set or changed." >
+			<Param name="p" type="Ext.Panel" comment="the Panel which has had its title changed." />
+			<Param name="The" type="String" comment="new title." />
+		</Event>
+	</Events>
+</Component>

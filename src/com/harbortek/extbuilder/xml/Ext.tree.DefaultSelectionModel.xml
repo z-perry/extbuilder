@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.tree.DefaultSelectionModel" extends="Ext.util.Observable">
+<Properties>
+</Properties>
+<Events>
+<Event name="beforeselect">
+<Param name="this" type="DefaultSelectionModel"/>
+<Param name="node" type="TreeNode"/>
+<Param name="node" type="TreeNode"/>
+</Event>
+<Event name="selectionchange">
+<Param name="this" type="DefaultSelectionModel"/>
+<Param name="node" type="TreeNode"/>
+</Event>
+<Event name="selectionchange">
+<Param name="this" type="MultiSelectionModel"/>
+<Param name="nodes" type="Array"/>
+</Event>
+</Events>
+</Component>

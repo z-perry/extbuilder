@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.Label" extends="Ext.BoxComponent" category="Form" label="Label" xtype="label">
+	<Properties>
+		<Property name="forId" type="String" comment="The id of the input element to which this label will be bound via the standard 'htmlFor' attribute. If not specified, the attribute will not be added to the label." />
+		<Property name="html" type="String" comment="An HTML fragment that will be used as the label's innerHTML (defaults to ''). Note that if {@link #text} is specified it will take precedence and this value will be ignored." />
+		<Property name="text" type="String" comment="The plain text to display within the label (defaults to ''). If you need to include HTML tags within the label's innerHTML, use the {@link #html} config instead." />
+	</Properties>
+	<Events>
+	</Events>
+</Component>

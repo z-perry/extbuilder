@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.DataProxy" extends="Ext.util.Observable">
+<Properties>
+</Properties>
+<Events>
+<Event name="beforeload" comment="Fires before a network request is made to retrieve a data object." >
+<Param name="this" type="Object" />
+<Param name="params" type="Object" comment="The params object passed to the {@link #load} function" />
+</Event>
+<Event name="load" comment="Fires before the load method's callback is called." >
+<Param name="this" type="Object" />
+<Param name="o" type="Object" comment="The data object" />
+<Param name="arg" type="Object" comment="The callback's arg object passed to the {@link #load} function" />
+</Event>
+</Events>
+</Component>

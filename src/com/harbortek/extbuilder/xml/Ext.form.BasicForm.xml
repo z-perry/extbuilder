@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.BasicForm" extends="Ext.util.Observable">
+	<Properties>
+		<Property name="baseParams" type="Object" comment="Parameters to pass with all requests. e.g. baseParams: {id: '123', foo: 'bar'}." />
+		<Property name="errorReader" type="DataReader" comment="An Ext.data.DataReader (e.g. {@link Ext.data.XmlReader}) to be used to read data when reading validation errors on 'submit' actions. This is completely optional as there is built-in support for processing JSON."/>
+		<Property name="fileUpload" type="Boolean" comment="Set to true if this form is a file upload." />
+		<Property name="method" type="String" comment="The request method to use (GET or POST) for form actions if one isn't supplied in the action options." />
+		<Property name="reader" type="DataReader" comment="An Ext.data.DataReader (e.g. {@link Ext.data.XmlReader}) to be used to read data when executing 'load' actions. This is optional as there is built-in support for processing JSON." />
+		<Property name="standardSubmit" type="Boolean" comment="If set to true, standard HTML form submits are used instead of XHR (Ajax) style form submissions. (defaults to false)" />
+		<Property name="timeout" type="Number" comment="Timeout for form actions in seconds (default is 30 seconds)." />
+		<Property name="trackResetOnLoad" type="Boolean" comment="If set to true, form.reset() resets to the last loaded or setValues() data instead of when the form was first created." />
+		<Property name="url" type="String" comment="The URL to use for form actions if one isn't supplied in the action options." />
+	</Properties>
+	<Events>
+		<Event name="actioncomplete" comment="Fires when an action is completed." >
+			<Param name="this" type="Form" />
+			<Param name="action" type="Action" comment="The {@link Ext.form.Action} that completed" />
+		</Event>
+		<Event name="actionfailed" comment="Fires when an action fails." >
+			<Param name="this" type="Form" />
+			<Param name="action" type="Action" comment="The {@link Ext.form.Action} that failed" />
+		</Event>
+		<Event name="beforeaction" comment="Fires before any action is performed. Return false to cancel the action." >
+			<Param name="this" type="Form" />
+			<Param name="action" type="Action" comment="The {@link Ext.form.Action} to be performed" />
+		</Event>
+	</Events>
+</Component>

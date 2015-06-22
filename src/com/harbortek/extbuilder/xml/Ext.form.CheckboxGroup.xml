@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.CheckboxGroup" extends="Ext.form.Field" category="Form" label="CheckboxGroup" xtype="checkboxgroup" isContainer="true" useXtype="true">
+	<Properties>
+		<Property name="columns" type="String/Number/Array" comment="Specifies the number of columns to use when displaying grouped checkbox/radio controls using automatic layout." />
+		<Property name="vertical" type="Boolean" comment="True to distribute contained controls across columns, completely filling each column top to bottom before starting on the next column.  The number of controls in each column will be automatically calculated to keep columns as even as possible.  The default value is false, so that controls will be added to columns one at a time, completely filling each row left to right before starting on the next row." />
+	</Properties>
+	<Events>
+	</Events>
+</Component>

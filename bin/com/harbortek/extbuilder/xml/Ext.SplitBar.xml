@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.SplitBar" extends="Ext.util.Observable">
+<Properties>
+</Properties>
+<Events>
+<Event name="beforeresize" comment="Fires before the splitter is dragged" >
+<Param name="this" type="Ext.SplitBar" />
+</Event>
+<Event name="moved" comment="Fires when the splitter is moved" >
+<Param name="this" type="Ext.SplitBar" />
+<Param name="newSize" type="Number" comment="the new width or height" />
+</Event>
+<Event name="resize" comment="Fires when the splitter is moved (alias for {" >
+<Param name="this" type="Ext.SplitBar" />
+<Param name="newSize" type="Number" comment="the new width or height" />
+</Event>
+</Events>
+</Component>

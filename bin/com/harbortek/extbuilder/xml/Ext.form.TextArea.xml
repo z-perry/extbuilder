@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.TextArea" extends="Ext.form.TextField" category="Form" label="TextArea" xtype="textarea">
+	<Properties>
+		<Property name="autoCreate" type="String/Object" comment="A DomHelper element spec, or true for a default element spec (defaults to {tag: 'textarea', style: 'width:100px;height:60px;', autocomplete: 'off'})" />
+		<Property name="growMax" type="Number" comment="The maximum height to allow when grow = true (defaults to 1000)" />
+		<Property name="growMin" type="Number" comment="The minimum height to allow when grow = true (defaults to 60)" />
+		<Property name="preventScrollbars" type="Boolean" comment="True to prevent scrollbars from appearing regardless of how much text is in the field (equivalent to setting overflow: hidden, defaults to false)" />
+	</Properties>
+	<Events>
+	</Events>
+</Component>

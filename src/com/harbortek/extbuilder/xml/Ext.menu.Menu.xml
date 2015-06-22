@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.menu.Menu" extends="Ext.util.Observable">
+<Properties>
+<Property name="allowOtherMenus" type="Boolean" />
+<Property name="defaultAlign" type="String" />
+<Property name="defaults" type="Object" />
+<Property name="ignoreParentClicks" type="Boolean" />
+<Property name="items" type="Mixed" />
+<Property name="minWidth" type="Number" />
+<Property name="shadow" type="Boolean/String" />
+<Property name="subMenuAlign" type="String" />
+</Properties>
+<Events>
+<Event name="beforehide">
+<Param name="this" type="Ext.menu.Menu"/>
+</Event>
+<Event name="beforeshow">
+<Param name="this" type="Ext.menu.Menu"/>
+</Event>
+<Event name="click">
+<Param name="this" type="Ext.menu.Menu"/>
+<Param name="menuItem" type="Ext.menu.Item"/>
+<Param name="e" type="Ext.EventObject"/>
+</Event>
+<Event name="hide">
+<Param name="this" type="Ext.menu.Menu"/>
+</Event>
+<Event name="itemclick">
+<Param name="baseItem" type="Ext.menu.BaseItem"/>
+<Param name="e" type="Ext.EventObject"/>
+</Event>
+<Event name="mouseout">
+<Param name="this" type="Ext.menu.Menu"/>
+<Param name="e" type="Ext.EventObject"/>
+<Param name="menuItem" type="Ext.menu.Item"/>
+</Event>
+<Event name="mouseover">
+<Param name="this" type="Ext.menu.Menu"/>
+<Param name="e" type="Ext.EventObject"/>
+<Param name="menuItem" type="Ext.menu.Item"/>
+</Event>
+<Event name="show">
+<Param name="this" type="Ext.menu.Menu"/>
+</Event>
+</Events>
+</Component>

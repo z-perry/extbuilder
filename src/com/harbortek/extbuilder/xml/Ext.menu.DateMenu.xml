@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.menu.DateMenu" extends="Ext.menu.Menu">
+<Properties>
+</Properties>
+<Events>
+<Event name="select">
+<Param name="picker" type="DatePicker"/>
+<Param name="date" type="Date"/>
+</Event>
+</Events>
+</Component>

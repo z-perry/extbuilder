@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.TabPanel" extends="Ext.Panel" category="Container" label="TabPanel" xtype="tabpanel" useXtype="true" useVariableName="false">
+	<Properties>
+		<Property name="activeTab" type="Number" comment="A string id or the numeric index of the tab that should be initially activated on render (defaults to none)." />
+		<Property name="animScroll" type="Boolean" comment="True to animate tab scrolling so that hidden tabs slide smoothly into view (defaults to true).  Only applies when {@link #enableTabScroll} = true." />
+		<Property name="autoTabSelector" type="String" comment="The CSS selector used to search for tabs in existing markup when {@link #autoTabs} = true (defaults to 'div.x-tab').  This can be any valid selector supported by {@link Ext.DomQuery#select}. Note that the query will be executed within the scope of this tab panel only (so that multiple tab panels from markup can be supported on a page)." />
+		<Property name="autoTabs" type="Boolean" comment="True to query the DOM for any divs with a class of 'x-tab' to be automatically converted to tabs and added to this panel (defaults to false). " />
+		<Property name="baseCls" type="String" comment="The base CSS class applied to the panel (defaults to 'x-tab-panel')." />
+		<Property name="deferredRender" type="Boolean" comment="Internally, the TabPanel uses a {@link Ext.layout.CardLayout} to manage its tabs. This property will be passed on to the layout as its {@link Ext.layout.CardLayout#deferredRender} config value, determining whether or not each tab is rendered only when first accessed (defaults to true)." />
+		<Property name="enableTabScroll" type="Boolean" comment="True to enable scrolling to tabs that may be invisible due to overflowing the overall TabPanel width. Only available with tabPosition:'top' (defaults to false)." />
+		<Property name="layoutOnTabChange" type="Boolean" comment="Set to true to do a layout of tab items as tabs are changed." />
+		<Property name="minTabWidth" type="Number" comment="The minimum width in pixels for each tab when {@link #resizeTabs} = true (defaults to 30)." />
+		<Property name="monitorResize" type="Boolean" comment="True to automatically monitor window resize events and rerender the layout on browser resize (defaults to true)." />
+		<Property name="plain" type="Boolean" comment="True to render the tab strip without a background container image (defaults to false)." />
+		<Property name="resizeTabs" type="Boolean" comment="True to automatically resize each tab so that the tabs will completely fill the tab strip (defaults to false).  Setting this to true may cause specific widths that might be set per tab to be overridden in order to fit them all into view (although {@link #minTabWidth} will always be honored)." />
+		<Property name="scrollDuration" type="Float" comment="The number of milliseconds that each scroll animation should last (defaults to .35). Only applies when {@link #animScroll} = true." />
+		<Property name="scrollIncrement" type="Number" comment="The number of pixels to scroll each time a tab scroll button is pressed (defaults to 100, or if {@link #resizeTabs} = true, the calculated tab width).  Only applies when {@link #enableTabScroll} = true." />
+		<Property name="scrollRepeatInterval" type="Number" comment="Number of milliseconds between each scroll while a tab scroll button is continuously pressed (defaults to 400)." />
+		<Property name="tabMargin" type="Number" comment="The number of pixels of space to calculate into the sizing and scrolling of tabs. If you change the margin in CSS, you will need to update this value so calculations are correct with either resizeTabs or scrolling tabs. (defaults to 2)" />
+		<Property name="tabPosition" type="String" comment="The position where the tab strip should be rendered (defaults to 'top').  The only other supported value is 'bottom'.  Note that tab scrolling is only supported for position 'top'." />
+		<Property name="tabWidth" type="Number" comment="The initial width in pixels of each new tab (defaults to 120)." />
+		<Property name="wheelIncrement" type="Number" comment="For scrolling tabs, the number of pixels to increment on mouse wheel scrolling (defaults to 20)." />
+	</Properties>
+	<Events>
+		<Event name="beforetabchange" comment="Fires before the active tab changes. Handlers can return false to cancel the tab change." >
+			<Param name="this" type="TabPanel" />
+			<Param name="newTab" type="Panel" comment="The tab being activated" />
+			<Param name="currentTab" type="Panel" comment="The current active tab" />
+		</Event>
+		<Event name="contextmenu" comment="Fires when the original browser contextmenu event originated from a tab element." >
+			<Param name="this" type="TabPanel" />
+			<Param name="tab" type="Panel" comment="The target tab" />
+			<Param name="e" type="EventObject" />
+		</Event>
+		<Event name="tabchange" comment="Fires after the active tab has changed." >
+			<Param name="this" type="TabPanel" />
+			<Param name="tab" type="Panel" comment="The new active tab" />
+		</Event>
+	</Events>
+</Component>

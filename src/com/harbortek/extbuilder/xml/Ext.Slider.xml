@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.Slider" extends="Ext.BoxComponent" category="Control" label="Slider" xtype="slider">
+	<Properties>
+		<Property name="animate" type="Boolean" comment="Turn on or off animation. Defaults to true" />
+		<Property name="clickToChange" type="Boolean" comment="Determines whether or not clicking on the Slider axis will change the slider. Defaults to true" />
+		<Property name="increment" type="Number" comment="How many units to change the slider when adjusting by drag and drop. Use this option to enable 'snapping'." />
+		<Property name="keyIncrement" type="Number" comment="How many units to change the Slider when adjusting with keyboard navigation. Defaults to 1. If the increment config is larger, it will be used instead." />
+		<Property name="maxValue" type="Number" comment="The maximum value for the Slider. Defaults to 100." />
+		<Property name="minValue" type="Number" comment="The minimum value for the Slider. Defaults to 0." />
+		<Property name="value" type="Number" comment="The value to initialize the slider with. Defaults to minValue." />
+		<Property name="vertical" type="Boolean" comment="Orient the Slider vertically rather than horizontally, defaults to false." />
+	</Properties>
+	<Events>
+		<Event name="beforechange" comment="Fires before the slider value is changed. By returning false from an event handler, you can cancel the event and prevent the slider from changing." >
+			<Param name="slider" type="Ext.Slider" comment="The slider" />
+			<Param name="newValue" type="Number" comment="The new value which the slider is being changed to." />
+			<Param name="oldValue" type="Number" comment="The old value which the slider was previously." />
+		</Event>
+		<Event name="change" comment="Fires when the slider value is changed." >
+			<Param name="slider" type="Ext.Slider" comment="The slider" />
+			<Param name="newValue" type="Number" comment="The new value which the slider has been changed to." />
+		</Event>
+		<Event name="changecomplete" comment="Fires when the slider value is changed by the user and any drag operations have completed." >
+			<Param name="slider" type="Ext.Slider" comment="The slider" />
+			<Param name="newValue" type="Number" comment="The new value which the slider has been changed to." />
+		</Event>
+		<Event name="drag" comment="Fires continuously during the drag operation while the mouse is moving." >
+			<Param name="slider" type="Ext.Slider" comment="The slider" />
+			<Param name="e" type="Ext.EventObject" comment="The event fired from Ext.dd.DragTracker" />
+		</Event>
+		<Event name="dragend" comment="Fires after the drag operation has completed." >
+			<Param name="slider" type="Ext.Slider" comment="The slider" />
+			<Param name="e" type="Ext.EventObject" comment="The event fired from Ext.dd.DragTracker" />
+		</Event>
+		<Event name="dragstart" comment="Fires after a drag operation has started." >
+			<Param name="slider" type="Ext.Slider" comment="The slider" />
+			<Param name="e" type="Ext.EventObject" comment="The event fired from Ext.dd.DragTracker" />
+		</Event>
+	</Events>
+</Component>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.Container" extends="Ext.BoxComponent" xtype="container">
+	<Properties>
+		<Property name="activeItem" type="String/Number" advanced="true" comment="A string component id or the numeric index of the component that should be initially activated within the container's layout on render.  For example, activeItem: 'item-1' or activeItem: 0 (index 0 = the first item in the container's collection).  activeItem only applies to layout styles that can display items one at a time (like {@link Ext.layout.Accordion}, {@link Ext.layout.CardLayout} and {@link Ext.layout.FitLayout}).  Related to {@link Ext.layout.ContainerLayout#activeItem}." />
+		<Property name="autoDestroy" type="Boolean" advanced="true" comment="If true the container will automatically destroy any contained component that is removed from it, else destruction must be handled manually (defaults to true)." />
+		<Property name="bufferResize" type="Boolean/Number" advanced="true" comment="When set to true (100 milliseconds) or a number of milliseconds, the layout assigned for this container will buffer the frequency it calculates and does a re-layout of components. This is useful for heavy containers or containers with a large quantity of sub-components for which frequent layout calls would be expensive." />
+		<Property name="defaultType" type="String" advanced="true" comment="" />
+		<Property name="defaults" type="Object" advanced="true" comment="A config object that will be applied to all components added to this container either via the {@link #items} config or via the {@link #add} or {@link #insert} methods.  The defaults config can contain any number of name/value property pairs to be added to each item, and should be valid for the types of items being added to the container.  For example, to automatically apply padding to the body of each of a set of contained {@link Ext.Panel} items, you could pass: defaults: {bodyStyle:'padding:15px'}." />
+		<Property name="hideBorders" type="Boolean" comment="True to hide the borders of each contained component, false to defer to the component's existing border settings (defaults to false)." />
+		<Property name="layout" type="Combox" values="anchor,border,card,column,fit,form,table" comment="The layout type to be used in this container.  If not specified, a default {@link Ext.layout.ContainerLayout} will be created and used.  Valid values are: absolute, accordion, anchor, border, card, column, fit, form and table. Specific config values for the chosen layout type can be specified using {@link #layoutConfig}." />
+		<Property name="layoutConfig" type="Object" comment="This is a config object containing properties specific to the chosen layout (to be used in conjunction with the {@link #layout} config value).  For complete details regarding the valid config options for each layout type, see the layout class corresponding to the type specified" />
+		<Property name="monitorResize" type="Boolean" advanced="true" comment="True to automatically monitor window resize events to handle anything that is sensitive to the current size of the viewport.  This value is typically managed by the chosen {@link #layout} and should not need to be set manually." />
+	</Properties>
+	<Events>
+		<Event name="add" comment="Fires after any {" >
+			<Param name="this" type="Ext.Container" />
+			<Param name="component" type="Ext.Component" comment="The component that was added" />
+			<Param name="index" type="Number" comment="The index at which the component was added to the container's items collection" />
+		</Event>
+		<Event name="afterlayout" comment="Fires when the components in this container are arranged by the associated layout manager." >
+			<Param name="this" type="Ext.Container" />
+			<Param name="layout" type="ContainerLayout" comment="The ContainerLayout implementation for this container" />
+		</Event>
+		<Event name="beforeadd" comment="Fires before any {" >
+			<Param name="this" type="Ext.Container" />
+			<Param name="component" type="Ext.Component" comment="The component being added" />
+			<Param name="index" type="Number" comment="The index at which the component will be added to the container's items collection" />
+		</Event>
+		<Event name="beforeremove" comment="Fires before any {" >
+			<Param name="this" type="Ext.Container" />
+			<Param name="component" type="Ext.Component" comment="The component being removed" />
+		</Event>
+		<Event name="remove" comment="Fires after any {" >
+			<Param name="this" type="Ext.Container" />
+			<Param name="component" type="Ext.Component" comment="The component that was removed" />
+		</Event>
+	</Events>
+</Component>

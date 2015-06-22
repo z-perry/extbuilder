@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.data.Tree" extends="Ext.util.Observable">
+<Properties>
+<Property name="leaf" type="Boolean" comment="true if this node is a leaf and does not have children @cfg {String} id The id for this node. If one is not specified, one is generated. @constructor @param {Object} attributes The attributes/config for the node" />
+<Property name="pathSeparator" type="String" comment="The token used to separate paths in node ids (defaults to '/')." />
+</Properties>
+<Events>
+<Event name="append" comment="Fires when a new child node is appended to a node in this tree." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="parent" type="Node" comment="The parent node" />
+<Param name="node" type="Node" comment="The newly appended node" />
+<Param name="index" type="Number" comment="The index of the newly appended node" />
+</Event>
+<Event name="append" comment="Fires when a new child node is appended" >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="this" type="Node" comment="This node" />
+<Param name="node" type="Node" comment="The newly appended node" />
+<Param name="index" type="Number" comment="The index of the newly appended node" />
+</Event>
+<Event name="beforeappend" comment="Fires before a new child is appended to a node in this tree, return false to cancel the append." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="parent" type="Node" comment="The parent node" />
+<Param name="node" type="Node" comment="The child node to be appended" />
+</Event>
+<Event name="beforeappend" comment="Fires before a new child is appended, return false to cancel the append." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="this" type="Node" comment="This node" />
+<Param name="node" type="Node" comment="The child node to be appended" />
+</Event>
+<Event name="beforeinsert" comment="Fires before a new child is inserted in a node in this tree, return false to cancel the insert." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="parent" type="Node" comment="The parent node" />
+<Param name="node" type="Node" comment="The child node to be inserted" />
+<Param name="refNode" type="Node" comment="The child node the node is being inserted before" />
+</Event>
+<Event name="beforeinsert" comment="Fires before a new child is inserted, return false to cancel the insert." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="this" type="Node" comment="This node" />
+<Param name="node" type="Node" comment="The child node to be inserted" />
+<Param name="refNode" type="Node" comment="The child node the node is being inserted before" />
+</Event>
+<Event name="beforemove" comment="Fires before a node is moved to a new location in the tree. Return false to cancel the move." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="node" type="Node" comment="The node being moved" />
+<Param name="oldParent" type="Node" comment="The parent of the node" />
+<Param name="newParent" type="Node" comment="The new parent the node is moving to" />
+<Param name="index" type="Number" comment="The index it is being moved to" />
+</Event>
+<Event name="beforemove" comment="Fires before this node is moved to a new location in the tree. Return false to cancel the move." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="this" type="Node" comment="This node" />
+<Param name="oldParent" type="Node" comment="The parent of this node" />
+<Param name="newParent" type="Node" comment="The new parent this node is moving to" />
+<Param name="index" type="Number" comment="The index it is being moved to" />
+</Event>
+<Event name="beforeremove" comment="Fires before a child is removed from a node in this tree, return false to cancel the remove." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="parent" type="Node" comment="The parent node" />
+<Param name="node" type="Node" comment="The child node to be removed" />
+</Event>
+<Event name="beforeremove" comment="Fires before a child is removed, return false to cancel the remove." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="this" type="Node" comment="This node" />
+<Param name="node" type="Node" comment="The child node to be removed" />
+</Event>
+<Event name="insert" comment="Fires when a new child node is inserted in a node in this tree." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="parent" type="Node" comment="The parent node" />
+<Param name="node" type="Node" comment="The child node inserted" />
+<Param name="refNode" type="Node" comment="The child node the node was inserted before" />
+</Event>
+<Event name="insert" comment="Fires when a new child node is inserted." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="this" type="Node" comment="This node" />
+<Param name="node" type="Node" comment="The child node inserted" />
+<Param name="refNode" type="Node" comment="The child node the node was inserted before" />
+</Event>
+<Event name="move" comment="Fires when a node is moved to a new location in the tree" >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="node" type="Node" comment="The node moved" />
+<Param name="oldParent" type="Node" comment="The old parent of this node" />
+<Param name="newParent" type="Node" comment="The new parent of this node" />
+<Param name="index" type="Number" comment="The index it was moved to" />
+</Event>
+<Event name="move" comment="Fires when this node is moved to a new location in the tree" >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="this" type="Node" comment="This node" />
+<Param name="oldParent" type="Node" comment="The old parent of this node" />
+<Param name="newParent" type="Node" comment="The new parent of this node" />
+<Param name="index" type="Number" comment="The index it was moved to" />
+</Event>
+<Event name="remove" comment="Fires when a child node is removed from a node in this tree." >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="parent" type="Node" comment="The parent node" />
+<Param name="node" type="Node" comment="The child node removed" />
+</Event>
+<Event name="remove" comment="Fires when a child node is removed" >
+<Param name="tree" type="Tree" comment="The owner tree" />
+<Param name="this" type="Node" comment="This node" />
+<Param name="node" type="Node" comment="The removed node" />
+</Event>
+</Events>
+</Component>

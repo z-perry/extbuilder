@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.ColorPalette" extends="Ext.Component" category="Control" label="ColorPalette" xtype="colorpalette">
+	<Properties>
+		<Property name="allowReselect" type="Boolean" comment="If set to true then reselecting a color that is already selected fires the {@link #select} event" />
+		<Property name="itemCls" type="String" comment="The CSS class to apply to the containing element (defaults to 'x-color-palette')" />
+		<Property name="tpl" type="String" comment="An existing XTemplate instance to be used in place of the default template for rendering the component." />
+		<Property name="value" type="String" comment="The initial color to highlight (should be a valid 6-digit color hex code without the # symbol).  Note that the hex codes are case-sensitive." />
+		<Property name="autoEl" hide="true" />
+	</Properties>
+	<Events>
+		<Event name="select" comment="Fires when a color is selected" >
+			<Param name="this" type="ColorPalette" />
+			<Param name="color" type="String" comment="The 6-digit color hex code (without the # symbol)" />
+		</Event>
+	</Events>
+</Component>

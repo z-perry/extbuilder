@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library>
+	<!--
+	<Component  file="com/harbortek/extbuilder/xml/Ext.BasicDialog.xml" />
+	-->
+	<Component  file="com/harbortek/extbuilder/xml/Ext.Component.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.BoxComponent.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.Container.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.Panel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.GridPanel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.PagingGridPanel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.EditorGridPanel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.tree.TreePanel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.TabPanel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.Window.xml" />
+
+
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.Checkbox.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.CheckboxGroup.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.ComboBox.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.DateField.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.Field.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.FieldSet.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.FormPanel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.Hidden.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.HtmlEditor.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.Label.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.NumberField.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.Radio.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.RadioGroup.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.TextArea.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.TextField.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.TimeField.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.form.TriggerField.xml" />
+
+
+	<Component  file="com/harbortek/extbuilder/xml/Ext.Button.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.ColorPalette.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.ContentPanel.xml" />
+	<!--
+	<Component  file="com/harbortek/extbuilder/xml/Ext.CycleButton.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.SplitButton.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.StatusBar.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.ProgressBar.xml" />
+	-->
+	<Component  file="com/harbortek/extbuilder/xml/Ext.DatePicker.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.Slider.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.Editor.xml" />
+	
+	<!--
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.ArrayReader.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.Connection.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.DataProxy.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.DataReader.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.GroupingStore.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.HttpProxy.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.JsonReader.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.JsonStore.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.MemoryProxy.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.Record.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.ScriptTagProxy.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.SimpleStore.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.Store.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.Tree.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.data.XmlReader.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.DataView.xml" />
+	-->
+	<!--
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.AbstractSelectionModel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.CellSelectionModel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.CheckboxSelectionModel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.ColumnModel.xml" />
+	-->
+	<!--
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.GridView.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.GroupingView.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.PropertyRecord.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.RowNumberer.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.grid.RowSelectionModel.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.JsonView.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.MasterTemplate.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.Adapter.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.BaseItem.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.CheckItem.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.ColorItem.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.ColorMenu.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.DateItem.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.DateMenu.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.Item.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.Menu.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.MenuMgr.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.Separator.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.menu.TextItem.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.MessageBox.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.PagingToolbar.xml" />
+	-->
+	<!--
+	<Component  file="com/harbortek/extbuilder/xml/Ext.SplitBar.xml" />
+	-->
+	<!--
+	<Component  file="com/harbortek/extbuilder/xml/Ext.Toolbar.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.tree.TreeEditor.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.tree.TreeLoader.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.tree.TreeNode.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.tree.TreeNodeUI.xml" />
+	-->
+	<!--
+	<Component  file="com/harbortek/extbuilder/xml/Ext.tree.TreeSorter.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.View.xml" />
+	<Component  file="com/harbortek/extbuilder/xml/Ext.Viewport.xml" />
+	-->
+</Library>

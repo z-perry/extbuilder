@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.menu.Separator" extends="Ext.menu.BaseItem">
+<Properties>
+<Property name="hideOnClick" type="Boolean" />
+<Property name="itemCls" type="String" />
+</Properties>
+<Events>
+</Events>
+</Component>

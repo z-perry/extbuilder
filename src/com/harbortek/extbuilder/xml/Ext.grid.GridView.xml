@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.grid.GridView" extends="Ext.util.Observable">
+	<Properties>
+			<Property name="autoFill" type="Boolean" comment="True to auto expand the columns to fit the grid when the grid is created." />
+			<Property name="cellSelector" type="String" comment="The selector used to find cells internally" />
+			<Property name="cellSelectorDepth" type="Number" comment="The number of levels to search for cells in event delegation (defaults to 4)" />
+			<Property name="deferEmptyText" type="Boolean" comment="True to defer emptyText being applied until the store's first load" />
+			<Property name="emptyText" type="String" comment="Default text to display in the grid body when no rows are available (defaults to '')." />
+			<Property name="enableRowBody" type="Boolean" comment="True to add a second TR element per row that can be used to provide a row body that spans beneath the data row.  Use the {@link #getRowClass} method's rowParams config to customize the row body." />
+			<Property name="forceFit" type="Boolean" comment="True to auto expand/contract the size of the columns to fit the grid width and prevent horizontal scrolling." />
+			<Property name="rowSelector" type="String" comment="The selector used to find rows internally" />
+			<Property name="rowSelectorDepth" type="Number" comment="The number of levels to search for rows in event delegation (defaults to 10)" />
+	</Properties>
+	<Events>
+		<Event name="beforerefresh" comment="Internal UI Event. Fired before the view is refreshed." >
+			<Param name="view" type="Ext.grid.GridView" />
+		</Event>
+		<Event name="beforerowremoved" comment="Internal UI Event. Fired before a row is removed." >
+			<Param name="view" type="Ext.grid.GridView" />
+			<Param name="rowIndex" type="Number" comment="The index of the row to be removed." />
+			<Param name="record" type="Ext.data.Record" comment="The Record to be removed" />
+		</Event>
+		<Event name="beforerowsinserted" comment="Internal UI Event. Fired before rows are inserted." >
+			<Param name="view" type="Ext.grid.GridView" />
+			<Param name="firstRow" type="Number" comment="The index of the first row to be inserted." />
+			<Param name="lastRow" type="Number" comment="The index of the last row to be inserted." />
+		</Event>
+		<Event name="refresh" comment="Internal UI Event. Fired after the GridView's body has been refreshed." >
+			<Param name="view" type="Ext.grid.GridView" />
+		</Event>
+		<Event name="rowremoved" comment="Internal UI Event. Fired after a row is removed." >
+			<Param name="view" type="Ext.grid.GridView" />
+			<Param name="rowIndex" type="Number" comment="The index of the row that was removed." />
+			<Param name="record" type="Ext.data.Record" comment="The Record that was removed" />
+		</Event>
+		<Event name="rowsinserted" comment="Internal UI Event. Fired after rows are inserted." >
+			<Param name="view" type="Ext.grid.GridView" />
+			<Param name="firstRow" type="Number" comment="The index of the first inserted." />
+			<Param name="lastRow" type="Number" comment="The index of the last row inserted." />
+		</Event>
+		<Event name="rowupdated" comment="Internal UI Event. Fired after a row has been updated." >
+			<Param name="view" type="Ext.grid.GridView" />
+			<Param name="firstRow" type="Number" comment="The index of the row updated." />
+			<Param name="record" type="Ext.data.record" comment="The Record backing the row updated." />
+		</Event>
+	</Events>
+</Component>

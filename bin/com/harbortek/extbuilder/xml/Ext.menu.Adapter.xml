@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.menu.Adapter" extends="Ext.menu.BaseItem">
+<Properties>
+</Properties>
+<Events>
+</Events>
+</Component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.ProgressBar" extends="Ext.BoxComponent">
+	<Properties>
+		<Property name="baseCls" type="String" comment="The base CSS class to apply to the progress bar's wrapper element (defaults to 'x-progress')" />
+		<Property name="value" type="Float" comment="A floating point value between 0 and 1 (e.g., .5, defaults to 0) @cfg {String} text The progress bar text (defaults to '') @cfg {Mixed} textEl The element to render the progress text to (defaults to the progress bar's internal text element) @cfg {String} id The progress bar element's id (defaults to an auto-generated id)" />
+	</Properties>
+	<Events>
+		<Event name="update" comment="Fires after each update interval" >
+			<Param name="this" type="Ext.ProgressBar" />
+			<Param name="The" type="Number" comment="current progress value" />
+			<Param name="The" type="String" comment="current progress text" />
+		</Event>
+	</Events>
+</Component>

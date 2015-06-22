@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.DatePicker" extends="Ext.Component" category="Control" label="DatePicker" xtype="datepicker">
+	<Properties>
+		<Property name="cancelText" type="String" comment="The text to display on the cancel button" />
+		<Property name="dayNames" type="Array" comment="An array of textual day names which can be overriden for localization support (defaults to Date.dayNames)" />
+		<Property name="disabledDates" type="Array" comment="An array of 'dates' to disable, as strings. These strings will be used to build a dynamic regular expression so they are very powerful." />
+		<Property name="disabledDatesRE" type="RegExp" comment="JavaScript regular expression used to disable a pattern of dates (defaults to null).  The {@link #disabledDates} config will generate this regex internally, but if you specify disabledDatesRE it will take precedence over the disabledDates value." />
+		<Property name="disabledDatesText" type="String" comment="The tooltip text to display when the date falls on a disabled date (defaults to 'Disabled')" />
+		<Property name="disabledDays" type="Array" comment="An array of days to disable, 0-based. For example, [0, 6] disables Sunday and Saturday (defaults to null)." />
+		<Property name="disabledDaysText" type="String" comment="The tooltip to display when the date falls on a disabled day (defaults to 'Disabled')" />
+		<Property name="format" type="String" comment="The default date format string which can be overriden for localization support.  The format must be valid according to {@link Date#parseDate} (defaults to 'm/d/y')." />
+		<Property name="maxDate" type="Date" comment="Maximum allowable date (JavaScript date object, defaults to null)" />
+		<Property name="maxText" type="String" comment="The error text to display if the maxDate validation fails (defaults to 'This date is after the maximum date')" />
+		<Property name="minDate" type="Date" comment="Minimum allowable date (JavaScript date object, defaults to null)" />
+		<Property name="minText" type="String" comment="The error text to display if the minDate validation fails (defaults to 'This date is before the minimum date')" />
+		<Property name="monthNames" type="Array" comment="An array of textual month names which can be overriden for localization support (defaults to Date.monthNames)" />
+		<Property name="monthYearText" type="String" comment="The header month selector tooltip (defaults to 'Choose a month (Control+Up/Down to move years)')" />
+		<Property name="nextText" type="String" comment="The next month navigation button tooltip (defaults to 'Next Month (Control+Right)')" />
+		<Property name="okText" type="String" comment="The text to display on the ok button" />
+		<Property name="prevText" type="String" comment="The previous month navigation button tooltip (defaults to 'Previous Month (Control+Left)')" />
+		<Property name="showToday" type="Boolean" comment="False to hide the footer area containing the Today button and disable the keyboard handler for spacebar that selects the current date (defaults to true)." />
+		<Property name="startDay" type="Number" comment="Day index at which the week should begin, 0-based (defaults to 0, which is Sunday)" />
+		<Property name="todayText" type="String" comment="The text to display on the button that selects the current date (defaults to 'Today')" />
+		<Property name="todayTip" type="String" comment="The tooltip to display for the button that selects the current date (defaults to '{current date} (Spacebar)')" />
+		<Property name="autoEl" hide="true" />
+	</Properties>
+	<Events>
+		<Event name="select" comment="Fires when a date is selected" >
+			<Param name="this" type="DatePicker" />
+			<Param name="date" type="Date" comment="The selected date" />
+		</Event>
+	</Events>
+</Component>

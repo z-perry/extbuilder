@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.Editor" extends="Ext.Component">
+	<Properties>
+		<Property name="alignment" type="String" comment="The position to align to (see {@link Ext.Element#alignTo} for more details, defaults to 'c-c?')." />
+		<Property name="autoSize" type="Boolean/String" comment="True for the editor to automatically adopt the size of the underlying field, 'width' to adopt the width only, or 'height' to adopt the height only (defaults to false)" />
+		<Property name="cancelOnEsc" type="Boolean" comment="True to cancel the edit when the escape key is pressed (defaults to false)" />
+		<Property name="completeOnEnter" type="Boolean" comment="True to complete the edit when the enter key is pressed (defaults to false)" />
+		<Property name="constrain" type="Boolean" comment="True to constrain the editor to the viewport" />
+		<Property name="hideEl" type="Boolean" comment="False to keep the bound element visible while the editor is displayed (defaults to true)" />
+		<Property name="ignoreNoChange" type="Boolean" comment="True to skip the edit completion process (no save, no events fired) if the user completes an edit and the value has not changed (defaults to false).  Applies only to string values - edits for other data types will never be ignored." />
+		<Property name="revertInvalid" type="Boolean" comment="True to automatically revert the field value and cancel the edit when the user completes an edit and the field validation fails (defaults to true)" />
+		<Property name="shadow" type="Boolean/String" comment="'sides' for sides/bottom only, 'frame' for 4-way shadow, and 'drop' for bottom-right shadow (defaults to 'frame')" />
+		<Property name="swallowKeys" type="Boolean" comment="Handle the keydown/keypress events so they don't propagate (defaults to true)" />
+		<Property name="updateEl" type="Boolean" comment="True to update the innerHTML of the bound element when the update completes (defaults to false)" />
+		<Property name="value" type="Mixed" comment="The data value of the underlying field (defaults to '')" />
+	</Properties>
+	<Events>
+		<Event name="beforecomplete" comment="Fires after a change has been made to the field, but before the change is reflected in the underlying field.  Saving the change to the field can be canceled by returning false from the handler of this event. Note that if the value has not changed and ignoreNoChange = true, the editing will still end but this event will not fire since no edit actually occurred." >
+			<Param name="this" type="Editor" />
+			<Param name="value" type="Mixed" comment="The current field value" />
+			<Param name="startValue" type="Mixed" comment="The original field value" />
+		</Event>
+		<Event name="beforestartedit" comment="Fires when editing is initiated, but before the value changes.  Editing can be canceled by returning false from the handler of this event." >
+			<Param name="this" type="Editor" />
+			<Param name="boundEl" type="Ext.Element" comment="The underlying element bound to this editor" />
+			<Param name="value" type="Mixed" comment="The field value being set" />
+		</Event>
+		<Event name="canceledit" comment="Fires after editing has been canceled and the editor's value has been reset." >
+			<Param name="this" type="Editor" />
+			<Param name="value" type="Mixed" comment="The user-entered field value that was discarded" />
+			<Param name="startValue" type="Mixed" comment="The original field value that was set back into the editor after cancel" />
+		</Event>
+		<Event name="complete" comment="Fires after editing is complete and any changed value has been written to the underlying field." >
+			<Param name="this" type="Editor" />
+			<Param name="value" type="Mixed" comment="The current field value" />
+			<Param name="startValue" type="Mixed" comment="The original field value" />
+		</Event>
+		<Event name="specialkey" comment="Fires when any key related to navigation (arrows, tab, enter, esc, etc.) is pressed.  You can check {" >
+			<Param name="this" type="Ext.form.Field" />
+			<Param name="e" type="Ext.EventObject" comment="The event object" />
+		</Event>
+		<Event name="startedit" comment="Fires when this editor is displayed" >
+			<Param name="boundEl" type="Ext.Element" comment="The underlying element bound to this editor" />
+			<Param name="value" type="Mixed" comment="The starting field value" />
+		</Event>
+	</Events>
+</Component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.Checkbox" extends="Ext.form.Field" category="Form" label="Checkbox" xtype="checkbox">
+	<Properties>
+		<Property name="autoCreate" type="String/Object" comment="A DomHelper element spec, or true for a default element spec (defaults to {tag: 'input', type: 'checkbox', autocomplete: 'off'})." />
+		<Property name="boxLabel" type="String" comment="The text that appears beside the checkbox (defaults to '')" />
+		<Property name="checked" type="Boolean" comment="True if the checkbox should render already checked (defaults to false)" />
+		<Property name="checkedCls" type="String" comment="The CSS class to use when the control is checked (defaults to 'x-form-check-checked'). Note that this class applies to both checkboxes and radio buttons and is added to the control's wrapper element." />
+		<Property name="focusCls" type="String" comment="The CSS class to use when the control receives input focus (defaults to 'x-form-check-focus'). Note that this class applies to both checkboxes and radio buttons and is added to the control's wrapper element." />
+		<Property name="handler" type="Function" comment="A function called when the {@link #checked} value changes (can be used instead of handling the check event)" />
+		<Property name="inputValue" type="String" comment="The value that should go into the generated input element's value attribute (defaults to undefined, with no value attribute)" />
+		<Property name="mouseDownCls" type="String" comment="The CSS class to use when the control is being actively clicked (defaults to 'x-form-check-down'). Note that this class applies to both checkboxes and radio buttons and is added to the control's wrapper element." />
+		<Property name="overCls" type="String" comment="The CSS class to use when the control is hovered over (defaults to 'x-form-check-over'). Note that this class applies to both checkboxes and radio buttons and is added to the control's wrapper element." />
+		<Property name="tabIndex" type="Number" comment="The tabIndex for this field. Note this only applies to fields that are rendered, not those which are built via applyTo (defaults to 0, which allows the browser to manage the tab index)." />
+	</Properties>
+	<Events>
+		<Event name="check" comment="Fires when the checkbox is checked or unchecked." >
+			<Param name="this" type="Ext.form.Checkbox" comment="This checkbox" />
+			<Param name="checked" type="Boolean" comment="The new checked value" />
+		</Event>
+	</Events>
+</Component>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.tree.TreeNode" extends="Ext.data.Node">
+	<Properties>
+		<Property name="allowChildren" type="Boolean" />
+		<Property name="allowDrag" type="Boolean" />
+		<Property name="allowDrop" type="Boolean" />
+		<Property name="checked" type="Boolean" />
+		<Property name="cls" type="String" />
+		<Property name="disabled" type="Boolean" />
+		<Property name="draggable" type="Boolean" />
+		<Property name="expandable" type="Boolean" />
+		<Property name="expanded" type="Boolean" />
+		<Property name="href" type="String" />
+		<Property name="hrefTarget" type="String" />
+		<Property name="icon" type="String" />
+		<Property name="iconCls" type="String" />
+		<Property name="isTarget" type="Boolean" />
+		<Property name="qtip" type="String" />
+		<Property name="qtipCfg" type="String" />
+		<Property name="singleClickExpand" type="Boolean" />
+		<Property name="text" type="String" />
+		<Property name="uiProvider" type="Function" />
+	</Properties>
+	<Events>
+		<Event name="beforechildrenrendered">
+			<Param name="this" type="Node"/>
+		</Event>
+		<Event name="beforeclick">
+			<Param name="this" type="Node"/>
+			<Param name="e" type="Ext.EventObject"/>
+		</Event>
+		<Event name="beforecollapse">
+			<Param name="this" type="Node"/>
+			<Param name="deep" type="Boolean"/>
+			<Param name="anim" type="Boolean"/>
+		</Event>
+		<Event name="beforeexpand">
+			<Param name="this" type="Node"/>
+			<Param name="deep" type="Boolean"/>
+			<Param name="anim" type="Boolean"/>
+		</Event>
+		<Event name="checkchange">
+			<Param name="this" type="Node"/>
+			<Param name="checked" type="Boolean"/>
+		</Event>
+		<Event name="click">
+			<Param name="this" type="Node"/>
+			<Param name="e" type="Ext.EventObject"/>
+		</Event>
+		<Event name="collapse">
+			<Param name="this" type="Node"/>
+		</Event>
+		<Event name="contextmenu">
+			<Param name="this" type="Node"/>
+			<Param name="e" type="Ext.EventObject"/>
+		</Event>
+		<Event name="dblclick">
+			<Param name="this" type="Node"/>
+			<Param name="e" type="Ext.EventObject"/>
+		</Event>
+		<Event name="disabledchange">
+			<Param name="this" type="Node"/>
+			<Param name="disabled" type="Boolean"/>
+		</Event>
+		<Event name="expand">
+			<Param name="this" type="Node"/>
+		</Event>
+		<Event name="textchange">
+			<Param name="this" type="Node"/>
+			<Param name="text" type="String"/>
+			<Param name="oldText" type="String"/>
+		</Event>
+	</Events>
+</Component>

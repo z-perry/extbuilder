@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.Button" extends="Ext.Component" category="Control" label="Button" xtype="button">
+	<Properties>
+		<Property name="allowDepress" type="Boolean" advanced="true" comment="False to not allow a pressed Button to be depressed (defaults to undefined). Only valid when {@link #enableToggle} is true." />
+		<Property name="clickEvent" type="String" advanced="true" comment="The type of event to map to the button's event handler (defaults to 'click')" />
+		<Property name="cls" type="String" advanced="true" comment="A CSS class string to apply to the button's main element." />
+		<Property name="enableToggle" type="Boolean" comment="True to enable pressed/not pressed toggling (defaults to false)" />
+		<Property name="handleMouseEvents" type="Boolean" advanced="true" comment="False to disable visual cues on mouseover, mouseout and mousedown (defaults to true)" />
+		<Property name="iconCls" type="String" comment="A css class which sets a background image to be used as the icon for this button" />
+		<Property name="menu" type="Mixed" advanced="true" comment="Standard menu attribute consisting of a reference to a menu object, a menu id or a menu config blob (defaults to undefined)." />
+		<Property name="menuAlign" type="String" advanced="true" comment="The position to align the menu to (see {@link Ext.Element#alignTo} for more details, defaults to 'tl-bl?')." />
+		<Property name="tabIndex" type="Number" comment="Set a DOM tabIndex for this button (defaults to undefined)" />
+		<Property name="template" type="Ext.Template" advanced="true" comment="(Optional) An {@link Ext.Template} with which to create the Button's main element. This Template must contain numeric substitution parameter 0 if it is to display the text property. Changing the template could require code modifications if required elements (e.g. a button) aren't present." />
+		<Property name="text" type="String" comment="The button text @cfg {String} icon The path to an image to display in the button (the image will be set as the background-image CSS property of the button by default, so if you want a mixed icon/text button, set cls:'x-btn-text-icon') @cfg {Function} handler A function called when the button is clicked (can be used instead of click event) @cfg {Object} scope The scope of the handler @cfg {Number} minWidth The minimum width for this button (used to give a set of buttons a common width) @cfg {String/Object} tooltip The tooltip for the button - can be a string or QuickTips config object @cfg {Boolean} hidden True to start hidden (defaults to false) @cfg {Boolean} disabled True to start disabled (defaults to false) @cfg {Boolean} pressed True to start pressed (only if enableToggle = true) @cfg {String} toggleGroup The group this toggle button is a member of (only 1 per group can be pressed, only applies if enableToggle = true) @cfg {Boolean/Object} repeat True to repeat fire the click event while the mouse is down. This can also be an {@link Ext.util.ClickRepeater} config object (defaults to false). @constructor Create a new button @param {Object} config The config object" />
+		<Property name="toggleHandler" type="Function" advanced="true" comment="Function called when a Button with enableToggle set to true is clicked. Two arguments are passed:button: Ext.Button,state: Boolean"/>
+		<Property name="tooltipType" type="String" advanced="true" comment="The type of tooltip to use. Either 'qtip' (default) for QuickTips or 'title' for title attribute." />
+		<!--
+		<Property name="type" type="String" advanced="true" comment="submit, reset or button - defaults to 'button'" />
+		-->
+		<Property name="autoEl" hide="true" />
+	</Properties>
+	<Events>
+		<Event name="click" comment="Fires when this button is clicked" >
+			<Param name="this" type="Button" />
+			<Param name="e" type="EventObject" comment="The click event" />
+		</Event>
+		<Event name="menuhide" comment="If this button has a menu, this event fires when it is hidden" >
+			<Param name="this" type="Button" />
+			<Param name="menu" type="Menu" />
+		</Event>
+		<Event name="menushow" comment="If this button has a menu, this event fires when it is shown" >
+			<Param name="this" type="Button" />
+			<Param name="menu" type="Menu" />
+		</Event>
+		<Event name="menutriggerout" comment="If this button has a menu, this event fires when the mouse leaves the menu triggering element" >
+			<Param name="this" type="Button" />
+			<Param name="menu" type="Menu" />
+			<Param name="e" type="EventObject" />
+		</Event>
+		<Event name="menutriggerover" comment="If this button has a menu, this event fires when the mouse enters the menu triggering element" >
+			<Param name="this" type="Button" />
+			<Param name="menu" type="Menu" />
+			<Param name="e" type="EventObject" />
+		</Event>
+		<Event name="mouseout" comment="Fires when the mouse exits the button" >
+			<Param name="this" type="Button" />
+			<Param name="e" type="Event" comment="The event object" />
+		</Event>
+		<Event name="mouseover" comment="Fires when the mouse hovers over the button" >
+			<Param name="this" type="Button" />
+			<Param name="e" type="Event" comment="The event object" />
+		</Event>
+		<Event name="toggle" comment="Fires when the 'pressed' state of this button changes (only if enableToggle = true)" >
+			<Param name="this" type="Button" />
+			<Param name="pressed" type="Boolean" />
+		</Event>
+	</Events>
+</Component>

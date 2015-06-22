@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.BoxComponent" extends="Ext.Component" xtype="box">
+	<Properties>
+		<Property name="autoHeight" type="Boolean" comment="True to use height:'auto', false to use fixed height. Note: although many components inherit this config option, not all will function as expected with a height of 'auto'. (defaults to false)." />
+		<Property name="autoWidth" type="Boolean" comment="True to use width:'auto', false to use fixed width. Note: although many components inherit this config option, not all will function as expected with a width of 'auto'. (defaults to false)." />
+		<Property name="height" type="Number" comment="The height of this component in pixels (defaults to auto)." />
+		<Property name="pageX" type="Number" advanced="true" comment="The page level x coordinate for this component if contained within a positioning container." />
+		<Property name="pageY" type="Number" advanced="true" comment="The page level y coordinate for this component if contained within a positioning container." />
+		<Property name="width" type="Number" comment="The width of this component in pixels (defaults to auto)." />
+		<Property name="x" type="Number" advanced="true" comment="The local x (left) coordinate for this component if contained within a positioning container." />
+		<Property name="y" type="Number" advanced="true" comment="The local y (top) coordinate for this component if contained within a positioning container." />
+	</Properties>
+	<Events>
+		<Event name="move" comment="Fires after the component is moved." >
+			<Param name="this" type="Ext.Component" />
+			<Param name="x" type="Number" comment="The new x position" />
+			<Param name="y" type="Number" comment="The new y position" />
+		</Event>
+		<Event name="resize" comment="Fires after the component is resized." >
+			<Param name="this" type="Ext.Component" />
+			<Param name="adjWidth" type="Number" comment="The box-adjusted width that was set" />
+			<Param name="adjHeight" type="Number" comment="The box-adjusted height that was set" />
+			<Param name="rawWidth" type="Number" comment="The width that was originally specified" />
+			<Param name="rawHeight" type="Number" comment="The height that was originally specified" />
+		</Event>
+	</Events>
+</Component>

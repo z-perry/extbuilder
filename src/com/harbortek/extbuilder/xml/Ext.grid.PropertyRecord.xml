@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.grid.PropertyRecord" extends="Ext.util.Observable">
+<Properties>
+<Property name="customEditors" type="Object" comment="An object containing name/value pairs of custom editor type definitions that allow the grid to support additional types of editable fields.  By default, the grid supports strongly-typed editing of strings, dates, numbers and booleans using built-in form editors, but any custom type can be supported and associated with a custom input control by specifying a custom editor.  The name of the editor type should correspond with the name of the property that will use the editor.  Example usage: <pre><code> var grid = new Ext.grid.PropertyGrid({ ... customEditors: { 'Start Time': new Ext.grid.GridEditor(new Ext.form.TimeField({selectOnFocus:true})) }, source: { 'Start Time': '10:00 AM' } }); </code></pre>" />
+<Property name="source" type="Object" comment="A data object to use as the data source of the grid (see {@link #setSource} for details)." />
+</Properties>
+<Events>
+<Event name="beforepropertychange" comment="Fires before a property value changes.  Handlers can return false to cancel the property change (this will internally call {" >
+<Param name="source" type="Object" comment="The source data object for the grid (corresponds to the same object passed in" />
+<Param name="recordId" type="String" comment="The record's id in the data store" />
+<Param name="value" type="Mixed" comment="The current edited property value" />
+<Param name="oldValue" type="Mixed" comment="The original property value prior to editing" />
+</Event>
+<Event name="propertychange" comment="Fires after a property value has changed." >
+<Param name="source" type="Object" comment="The source data object for the grid (corresponds to the same object passed in" />
+<Param name="recordId" type="String" comment="The record's id in the data store" />
+<Param name="value" type="Mixed" comment="The current edited property value" />
+<Param name="oldValue" type="Mixed" comment="The original property value prior to editing" />
+</Event>
+</Events>
+</Component>

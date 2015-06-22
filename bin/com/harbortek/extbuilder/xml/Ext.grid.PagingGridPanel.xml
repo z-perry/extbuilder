@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component id="Ext.grid.PagingGridPanel" extClass="Ext.grid.GridPanel" extends="Ext.grid.GridPanel" category="Container" label="PagingGridPanel" xtype="grid" useXtype="false" useVariableName="true">
+	<Properties>
+		<Property name="bbar" type="Ext.PagingToolbar"/>
+	</Properties>
+	
+</Component>

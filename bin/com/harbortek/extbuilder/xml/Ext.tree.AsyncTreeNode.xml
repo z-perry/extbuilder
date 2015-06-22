@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.tree.AsyncTreeNode" extends="Ext.tree.TreeNode">
+<Properties>
+<Property name="loader" type="TreeLoader" />
+</Properties>
+<Events>
+<Event name="beforeload">
+<Param name="this" type="Node"/>
+</Event>
+<Event name="load">
+<Param name="this" type="Node"/>
+</Event>
+</Events>
+</Component>

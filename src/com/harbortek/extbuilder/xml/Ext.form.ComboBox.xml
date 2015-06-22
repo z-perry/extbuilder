@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component  extClass="Ext.form.ComboBox" extends="Ext.form.TriggerField" category="Form" label="ComboBox" xtype="combo">
+	<Properties>
+		<Property name="allQuery" type="String" comment="The text query to send to the server to return all records for the list with no filtering (defaults to '')" />
+		<Property name="autoCreate" type="Boolean" comment="A DomHelper element spec, or true for a default element spec (defaults to: {tag: 'input', type: 'text', size: '24', autocomplete: 'off'})" />
+		<Property name="displayField" type="String" comment="The underlying data field name to bind to this ComboBox (defaults to undefined if mode = 'remote' or 'text' if transforming a select)" />
+		<Property name="editable" type="Boolean" comment="False to prevent the user from typing text directly into the field, just like a traditional select (defaults to true)" />
+		<Property name="forceSelection" type="Boolean" comment="True to restrict the selected value to one of the values in the list, false to allow the user to set arbitrary text into the field (defaults to false)" />
+		<Property name="handleHeight" type="Number" comment="The height in pixels of the dropdown list resize handle if resizable = true (defaults to 8)" />
+		<Property name="hiddenId" type="String" comment="If {@link #hiddenName} is specified, hiddenId can also be provided to give the hidden field a unique id (defaults to the hiddenName).  The hiddenId and combo {@link #id} should be different, since no two DOM nodes should share the same id." />
+		<Property name="hiddenName" type="String" comment="If specified, a hidden form field with this name is dynamically generated to store the field's data value (defaults to the underlying DOM element's name). Required for the combo's value to automatically post during a form submission.  Note that the hidden field's id will also default to this name if {@link #hiddenId} is not specified.  The combo's id and the hidden field's ids should be different, since no two DOM nodes should share the same id, so if the combo and hidden names are the same, you should specify a unique hiddenId." />
+		<Property name="itemSelector" type="String" comment="A simple CSS selector (e.g. div.some-class or span:first-child) that will be used to determine what nodes the DataView which handles the dropdown display will be working with." />
+		<Property name="lazyInit" type="Boolean" comment="True to not initialize the list for this combo until the field is focused (defaults to true)" />
+		<Property name="lazyRender" type="Boolean" comment="True to prevent the ComboBox from rendering until requested (should always be used when rendering into an Ext.Editor, defaults to false)." />
+		<Property name="listAlign" type="String" comment="A valid anchor position value. See {@link Ext.Element#alignTo} for details on supported anchor positions (defaults to 'tl-bl')" />
+		<Property name="listClass" type="String" comment="CSS class to apply to the dropdown list element (defaults to '')" />
+		<Property name="listWidth" type="Number" comment="The width in pixels of the dropdown list (defaults to the width of the ComboBox field)" />
+		<Property name="loadingText" type="String" comment="The text to display in the dropdown list while data is loading.  Only applies when mode = 'remote' (defaults to 'Loading...')" />
+		<Property name="maxHeight" type="Number" comment="The maximum height in pixels of the dropdown list before scrollbars are shown (defaults to 300)" />
+		<Property name="minChars" type="Number" comment="The minimum number of characters the user must type before autocomplete and typeahead activate (defaults to 4 if remote or 0 if local, does not apply if editable = false)" />
+		<Property name="minHeight" type="Number" comment="The minimum height in pixels of the dropdown list when the list is constrained by its distance to the viewport edges (defaults to 90)" />
+		<Property name="minListWidth" type="Number" comment="The minimum width of the dropdown list in pixels (defaults to 70, will be ignored if listWidth has a higher value)" />
+		<Property name="mode" type="String" comment="Set to 'local' if the ComboBox loads local data (defaults to 'remote' which loads from the server)" />
+		<Property name="pageSize" type="Number" comment="If greater than 0, a paging toolbar is displayed in the footer of the dropdown list and the filter queries will execute with page start and limit parameters.  Only applies when mode = 'remote' (defaults to 0)" />
+		<Property name="queryDelay" type="Number" comment="The length of time in milliseconds to delay between the start of typing and sending the query to filter the dropdown list (defaults to 500 if mode = 'remote' or 10 if mode = 'local')" />
+		<Property name="queryParam" type="String" comment="Name of the query as it will be passed on the querystring (defaults to 'query')" />
+		<Property name="resizable" type="Boolean" comment="True to add a resize handle to the bottom of the dropdown list (defaults to false)" />
+		<Property name="selectOnFocus" type="Boolean" comment="True to select any existing text in the field immediately on focus.  Only applies when editable = true (defaults to false)" />
+		<Property name="selectedClass" type="String" comment="CSS class to apply to the selected item in the dropdown list (defaults to 'x-combo-selected')" />
+		<Property name="shadow" type="Boolean" comment="True or 'sides' for the default effect, 'frame' for 4-way shadow, and 'drop' for bottom-right" />
+		<Property name="store" type="Ext.data.Store" comment="The data source to which this combo is bound (defaults to undefined).  This can be any {@link Ext.data.Store} subclass, a 1-dimensional array (e.g., ['Foo','Bar']) or a 2-dimensional array (e.g., [['f','Foo'],['b','Bar']]).  Arrays will be converted to a {@link Ext.data.SimpleStore} internally. 1-dimensional arrays will automatically be expanded (each array item will be the combo value and text) and for multi-dimensional arrays, the value in index 0 of each item will be assumed to be the combo value, while the value at index 1 is assumed to be the combo text." />
+		<Property name="title" type="String" comment="If supplied, a header element is created containing this text and added into the top of the dropdown list (defaults to undefined, with no header element)" />
+		<Property name="tpl" type="String/Ext.XTemplate" comment="The template string" />
+		<Property name="transform" type="Mixed" comment="The id, DOM node or element of an existing HTML SELECT to convert to a ComboBox. Note that if you specify this and the combo is going to be in a {@link Ext.form.BasicForm} or {@link Ext.form.FormPanel}, you must also set {@link #lazyRender} = true." />
+		<Property name="triggerAction" type="String" comment="The action to execute when the trigger field is activated.  Use 'all' to run the query specified by the allQuery config option (defaults to 'query')" />
+		<Property name="triggerClass" type="String" comment="An additional CSS class used to style the trigger button. " />
+		<Property name="typeAhead" type="Boolean" comment="True to populate and autoselect the remainder of the text being typed after a configurable delay ({@link #typeAheadDelay}) if it matches a known value (defaults to false)" />
+		<Property name="typeAheadDelay" type="Number" comment="The length of time in milliseconds to wait until the typeahead text is displayed if typeAhead = true (defaults to 250)" />
+		<Property name="valueField" type="String" comment="The underlying data value name to bind to this ComboBox (defaults to undefined if mode = 'remote' or 'value' if transforming a select) Note: use of a valueField requires the user to make a selection in order for a value to be mapped." />
+		<Property name="valueNotFoundText" type="String" comment="When using a name/value combo, if the value passed to setValue is not found in the store, valueNotFoundText will be displayed as the field text if defined (defaults to undefined). If this defaut text is used, it means there is no value set and no validation will occur on this field." />
+		<Property name="grow" hide="true" />
+		<Property name="growMin" hide="true" />
+		<Property name="growMax" hide="true" />
+	</Properties>
+	<Events>
+		<Event name="beforequery" comment="Fires before all queries are processed. Return false to cancel the query or set the queryEvent's cancel property to true." >
+			<Param name="queryEvent" type="Object" comment="An object" />
+		</Event>
+		<Event name="beforeselect" comment="Fires before a list item is selected. Return false to cancel the selection." >
+			<Param name="combo" type="Ext.form.ComboBox" comment="This combo box" />
+			<Param name="record" type="Ext.data.Record" comment="The data record returned from the underlying store" />
+			<Param name="index" type="Number" comment="The index of the selected item in the dropdown list" />
+		</Event>
+		<Event name="collapse" comment="Fires when the dropdown list is collapsed" >
+			<Param name="combo" type="Ext.form.ComboBox" comment="This combo box" />
+		</Event>
+		<Event name="expand" comment="Fires when the dropdown list is expanded" >
+			<Param name="combo" type="Ext.form.ComboBox" comment="This combo box" />
+		</Event>
+		<Event name="select" comment="Fires when a list item is selected" >
+			<Param name="combo" type="Ext.form.ComboBox" comment="This combo box" />
+			<Param name="record" type="Ext.data.Record" comment="The data record returned from the underlying store" />
+			<Param name="index" type="Number" comment="The index of the selected item in the dropdown list" />
+		</Event>
+	</Events>
+</Component>

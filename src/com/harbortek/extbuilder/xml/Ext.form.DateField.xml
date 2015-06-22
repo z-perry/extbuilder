@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.form.DateField" extends="Ext.form.TriggerField" category="Form" label="DateField" xtype="datefield">
+	<Properties>
+		<Property name="altFormats" type="String" comment="Multiple date formats separated by '|' to try when parsing a user input value and it doesn't match the defined format (defaults to 'm/d/Y|n/j/Y|n/j/y|m/j/y|n/d/y|m/j/Y|n/d/Y|m-d-y|m-d-Y|m/d|m-d|md|mdy|mdY|d|Y-m-d')." />
+		<Property name="autoCreate" type="String/Object" comment="A DomHelper element spec, or true for a default element spec (defaults to {tag: 'input', type: 'text', size: '10', autocomplete: 'off'})" />
+		<Property name="disabledDates" type="Array" comment="An array of 'dates' to disable, as strings. These strings will be used to build a dynamic regular expression so they are very powerful. " />
+		<Property name="disabledDatesText" type="String" comment="The tooltip text to display when the date falls on a disabled date (defaults to 'Disabled')" />
+		<Property name="disabledDays" type="Array" comment="An array of days to disable, 0 based. For example, [0, 6] disables Sunday and Saturday (defaults to null)." />
+		<Property name="disabledDaysText" type="String" comment="The tooltip to display when the date falls on a disabled day (defaults to 'Disabled')" />
+		<Property name="format" type="String" comment="The default date format string which can be overriden for localization support.  The format must be valid according to {@link Date#parseDate} (defaults to 'm/d/Y')." />
+		<Property name="invalidText" type="String" comment="The error text to display when the date in the field is invalid (defaults to '{value} is not a valid date - it must be in the format {format}')." />
+		<Property name="maxText" type="String" comment="The error text to display when the date in the cell is after maxValue (defaults to 'The date in this field must be before {maxValue}')." />
+		<Property name="maxValue" type="Date/String" comment="The maximum allowed date. Can be either a Javascript date object or a string date in a valid format (defaults to null)." />
+		<Property name="minText" type="String" comment="The error text to display when the date in the cell is before minValue (defaults to 'The date in this field must be after {minValue}')." />
+		<Property name="minValue" type="Date/String" comment="The minimum allowed date. Can be either a Javascript date object or a string date in a valid format (defaults to null)." />
+		<Property name="showToday" type="Boolean" comment="False to hide the footer area of the DatePicker containing the Today button and disable the keyboard handler for spacebar that selects the current date (defaults to true)." />
+		<Property name="triggerClass" type="String" comment="An additional CSS class used to style the trigger button. " />
+		<Property name="grow" hide="true" />
+		<Property name="growMin" hide="true" />
+		<Property name="growMax" hide="true" />
+	</Properties>
+	<Events>
+	</Events>
+</Component>

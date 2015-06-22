@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.QuickTip" extends="Ext.ToolTip">
+<Properties>
+<Property name="interceptTitles" type="Boolean" />
+<Property name="target" type="Mixed" />
+</Properties>
+<Events>
+</Events>
+</Component>

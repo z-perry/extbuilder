@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component extClass="Ext.JsonView" extends="Ext.View">
+<Properties>
+</Properties>
+<Events>
+<Event name="beforerender">
+<Param name="this" type="Ext.JsonView"/>
+<Param name="data" type="Object"/>
+</Event>
+<Event name="load">
+<Param name="this" type="Ext.JsonView"/>
+<Param name="data" type="Object"/>
+<Param name="response" type="Object"/>
+</Event>
+<Event name="loadexception">
+<Param name="this" type="Ext.JsonView"/>
+<Param name="response" type="Object"/>
+</Event>
+</Events>
+</Component>
