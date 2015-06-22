@@ -12,7 +12,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 = Installation =
  == Eclipse 3.x==
  # make sure you eclipse version is 3.2,3.3 or 3.4 with GEF installed. 
- # download archived update site from  [http://code.google.com/p/extbuilder/downloads/list]
+ # download archived update site from  [https://github.com/z-perry/extbuilder]
  # Click Help->Software Updates->Find and Install...->Search for new features to install,Click Next
  # Click New Archived Site-> Browse to extbuilder_update.zip and click Open.
  # Click OK and follow the instructions to install.
@@ -28,12 +28,12 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 == Kick start ==
  # Click Windows->Preferences..->ExtJs Builder
  # Click Browse button to select your Ext home directory.
- [http://extbuilder.googlecode.com/svn/wiki/pref.png] 
+ [https://github.com/z-perry/extbuilder/blob/master/wiki/pref.png] 
 
  # Click File->New, then select Web->ExtJs Page. a wizard dialog will appear.
-   [http://extbuilder.googlecode.com/svn/wiki/new_wizard.png]
+   [https://github.com/z-perry/extbuilder/blob/master/wiki/new_wizard.png]
  # Click Next
-   [http://extbuilder.googlecode.com/svn/wiki/new_wizard2.png]
+   [https://github.com/z-perry/extbuilder/blob/master/wiki/new_wizard2.png]
  # Input the namespace you want
  # Input class name you want, extbuilder create one class in one file, just like Java
  # Input the file name, default is the class name
@@ -44,8 +44,8 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 == Overview == 
   Before you start to editing a Ext page, make sure you opened Outline View and Properties View. If not, please click Window->Show View to open these two views.
    
-  [http://extbuilder.googlecode.com/svn/wiki/overview1.png]
-  [http://extbuilder.googlecode.com/svn/wiki/overview2.png]
+  [https://github.com/z-perry/extbuilder/blob/master/wiki/overview1.png]
+  [https://github.com/z-perry/extbuilder/blob/master/wiki/overview2.png]
 
   === Editor View ===
   It’s a multi-pages editor contains a source code editor and a UI editor. 
@@ -86,9 +86,9 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
    # Click the child panel on outline view
    # Set the child panel's region to 'center'
    Because Ext border layout require a center region component, so when you set the layout to 'border', and not set the child panel's region to 'center', you may see some error message in browser, it's not a bug of ExtBuilder.
-   [http://extbuilder.googlecode.com/svn/wiki/layout.png]
-   [http://extbuilder.googlecode.com/svn/wiki/region.png]
-   [http://extbuilder.googlecode.com/svn/wiki/twopanel.png]
+   [https://github.com/z-perry/extbuilder/blob/master/wiki/layout.png]
+   [https://github.com/z-perry/extbuilder/blob/master/wiki/region.png]
+   [https://github.com/z-perry/extbuilder/blob/master/wiki/twopanel.png]
 
 == FormPanel ==
    # Create a new Ext page
@@ -100,8 +100,8 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 
    Then you get a two column form panel
 
-   [http://extbuilder.googlecode.com/svn/wiki/formoutline.png]
-   [http://extbuilder.googlecode.com/svn/wiki/form.png]
+   [https://github.com/z-perry/extbuilder/blob/master/wiki/formoutline.png]
+   [https://github.com/z-perry/extbuilder/blob/master/wiki/form.png]
 
    
  
@@ -113,7 +113,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
    # In Toolbar Settings Dialog, click Add Button(+) to add Button,Separator,Spacer,Fill,TextItem and MenuButton. Menu editing is not ready in current  version.
    # Change the text toolbar text, by default, the handler is as "onButtonTextClick". Of course, you can change the handler function name.
    # Then switch to Source code Editor, see what happened.
-   [http://extbuilder.googlecode.com/svn/wiki/toolbar.png]
+   [https://github.com/z-perry/extbuilder/blob/master/wiki/toolbar.png]
    
    {{{ 
          tbar : new Ext.Toolbar([{
@@ -143,8 +143,8 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
   PagingGridPanel is a gridpanel with paging toolbar on bottom.
 
 ===Store===
-  [http://extbuilder.googlecode.com/svn/wiki/store1.png]
-  [http://extbuilder.googlecode.com/svn/wiki/store2.png]
+  [https://github.com/z-perry/extbuilder/blob/master/wiki/store1.png]
+  [https://github.com/z-perry/extbuilder/blob/master/wiki/store2.png]
 
   Store can take data from remote(HttpProxy) or local(MemoryProxy). Here is a example we use MemoryProxy to build grid.
   # Click '...' button to show Store Settings Dialog
@@ -170,7 +170,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
    }}} 
    
    Now, you can see the data at preview page.
-   [http://extbuilder.googlecode.com/svn/wiki/grid1.png]
+   [https://github.com/z-perry/extbuilder/blob/master/wiki/grid1.png]
 ===Columns===
 
 
