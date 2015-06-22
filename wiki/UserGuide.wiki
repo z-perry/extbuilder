@@ -12,7 +12,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 = Installation =
  == Eclipse 3.x==
  # make sure you eclipse version is 3.2,3.3 or 3.4 with GEF installed. 
- # download archived update site from  [https://github.com/z-perry/extbuilder]
+ # download archived update site from  https://github.com/z-perry/extbuilder
  # Click Help->Software Updates->Find and Install...->Search for new features to install,Click Next
  # Click New Archived Site-> Browse to extbuilder_update.zip and click Open.
  # Click OK and follow the instructions to install.
