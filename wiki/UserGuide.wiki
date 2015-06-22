@@ -28,7 +28,7 @@ ExtBuilder is an eclipse plugin can help developer work out good style Ext javas
 == Kick start ==
  # Click Windows->Preferences..->ExtJs Builder
  # Click Browse button to select your Ext home directory.
- [https://github.com/z-perry/extbuilder/blob/master/wiki/pref.png] 
+ https://github.com/z-perry/extbuilder/blob/master/wiki/pref.png
 
  # Click File->New, then select Web->ExtJs Page. a wizard dialog will appear.
    [https://github.com/z-perry/extbuilder/blob/master/wiki/new_wizard.png]
